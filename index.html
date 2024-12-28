@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang học online</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon">
+
+    <!-- fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="app/scss/style.css">
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+
+<body>
+    <div id="preloader">
+    <img src="app/images/preloader.gif">
+</div>
+</div>
+<header class="header" id="header">
+    <div class="logo">
+        <img src="app/images/logo/logo.svg" alt="Logo">
+    </div>
+    <div class="menu-hamburger" id="toggle">
+        <!-- Phần menu hamburger nếu cần -->
+    </div>
+    <nav class="navbar" id="navbar">
+        <ul class="navbar-list" id="primary-navbar" data-visiable="false">
+            <div class="language-dropdown">
+                <button id="lang-selector-toggle" class="lang-toggle">
+                    <span id="language_name">Choose language</span> <!-- Tên ngôn ngữ sẽ hiển thị ở đây -->
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <ul id="lang-options-menu" class="lang-menu">
+                    <li data-lang="en">English</li>
+                    <li data-lang="vi">Tiếng Việt</li>
+                    <li data-lang="la">ພາສາລາວ</li>
+                </ul>
+            </div>
+            <li><a href="#banner" class="navbar-links" data-i18n="home">Home</a></li>
+            <li><a href="#features" class="navbar-links" data-i18n="features">Features</a></li>
+            <li><a href="#expert" class="navbar-links" data-i18n="about">About</a></li>
+            <li><a href="#contact" class="navbar-links" data-i18n="contact">Contact</a></li>
+            <li><a href="#courses" class="btn btn-get-courses" data-i18n="get_courses"><span>Get Courses</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main>
+    <!-- --------------------------------
+        banner section 
+    -------------------------------- -->
+    <section class="banner column-4" id="banner">
+        <div class="text-area">
+            <div class="text-part">
+                <h1 data-i18n="training_title">Huấn luyện <span>kỹ năng</span> để phát triển</h1>
+                <p data-i18n="banner_text">Nhận chứng chỉ được công nhận trong ngành và tiến xa hơn</p>
+            </div>
+            <div class="button-group">
+                <a href="#courses" class="btn btn-start-course" data-i18n="start_course_btn">Bắt đầu một khóa học</a>
+            </div>
+        </div>
+        <div class="image-area">
+            <img src="app/images/causal.png" alt="">
+            <div class="circle"></div>
+            <a href="#features" class="info info-expert" data-i18n="expert_title">
+                <ion-icon name="people-circle-outline"></ion-icon><span>Chuyên gia chuyên nghiệp</span>
+            </a>
+            <a href="#features" class="info info-live" data-i18n="live_class_title">
+                <ion-icon name="videocam-outline"></ion-icon><span>Lớp học trực tiếp</span>
+            </a>
+            <a href="#features" class="info info-chat" data-i18n="chat_class_title">
+                <ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Lớp giải đáp thắc mắc</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="features fade-in" id="features">
+        <div class="custom-shape-divider-bottom fade-in">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="main-container column-2 fade-in">
+            <div class="text-part fade-in">
+                <h1 data-i18n="feature_video_title">Video, âm thanh, lớp học trực tiếp và khóa học chất lượng cao.</h1>
+                <p data-i18n="feature_video_text">Video chất lượng cao là video có độ phân giải và chất lượng vượt trội hơn so với tiêu chuẩn ngành. Nhận chứng chỉ được công nhận trong ngành và phát triển thông qua các khóa học trực tuyến chất lượng cao của chúng tôi.</p>
+                <div class="feature-card column-2 fade-in">
+                    <div class="card card1 fade-in">
+                        <ion-icon name="person-sharp"></ion-icon>
+                        <h3 data-i18n="learn_from_experts">Học từ các chuyên gia</h3>
+                        <p data-i18n="learn_from_experts_text">Chúng tôi hợp tác với các nhà lãnh đạo trong ngành để mang lại nền giáo dục chất lượng cao.</p>
+                    </div>
+                    <div class="card card2 fade-in">
+                        <ion-icon name="timer-sharp"></ion-icon>
+                        <h3 data-i18n="lifetime_support">Hỗ trợ trọn đời</h3>
+                        <p data-i18n="lifetime_support_text">Chúng tôi đảm bảo hỗ trợ trọn đời mà bạn có thể tận dụng bất kỳ lúc nào, ở bất kỳ đâu.</p>
+                    </div>
+                    <div class="card card3 fade-in">
+                        <ion-icon name="bookmark-sharp"></ion-icon>
+                        <h3 data-i18n="professional_certificates">Chứng chỉ chuyên nghiệp</h3>
+                        <p data-i18n="professional_certificates_text">Sau khi hoàn thành lớp học hoặc khóa học, bạn sẽ nhận được chứng chỉ được công nhận trên toàn thế giới.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-part fade-in">
+                <div class="overlay-text fade-in">
+                    <h3 data-i18n="why_choose_us">Tại sao<br />chọn<br/>chúng tôi</h3>
+                </div>
+                <div class="overlay-color fade-in"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<section id="courses" class="courses">
+    <div class="text-part fade-in">
+        <h1 data-i18n="popular_courses_title">Our lesson</h1>
+        <div class="overlay-text">
+            <h2 data-i18n="courses_heading">COURSES</h2>
+        </div>
+        <hr class="line fade-in">
+    </div>
+    
+           <div class="main-container">
+    <!-- card 1 -->  
+    <div class="card card1 fade-in2">
+        <div class="card_image">
+            <img src="./lesson/tienglao.png" alt="Software Development">
+        </div>
+        <div class="card_info">
+            <!--<div class="card_info_rating">
+                <div class="rating_box">
+                    <ion-icon name="star"></ion-icon>
+                    <span>4.4</span>
+                </div>
+                <div class="rating_text">
+                    <p>1k Rating</p>
+                </div>
+            </div>-->  
+            <div class="card_info_text">
+                <a href="#" data-i18n="card1_title">Example1</a>
+            </div>
+            <div class="card_info_status fade-in">
+                <div class="info fade-in">
+                    <ion-icon name="play-circle"></ion-icon>
+                    <p data-i18n="card1_status">Live Class</p>
+                </div>
+                <div class="info fade-in">
+                    <ion-icon name="time"></ion-icon>
+                    <p data-i18n="card1_duration">32 Hour</p>
+                </div>
+            </div>
+            <div class="card_info_price f">
+                <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='tienglao.html'">
+                    start learn
+                </button>
+            </div>
+            
+            
+        </div>
+
+    </div>
+</div>
+<!--<div class="lowerpart fade-in2">
+    <button class="btn btn-viewall">
+        View All
+    </button>
+</div> -->
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="var(--secondarycolor)" fill-opacity="1" d="M0,192L1440,288L1440,0L0,0Z"></path>
+        </svg>
+
+        <!-- -------------------------------- -->
+        <!-- expert section  -->
+        <!-- -------------------------------- -->
+
+        <section id="expert" class="expert fade-in">
+    <div class="circle blur-neon expert_circle fade-in"></div>
+    <div class="expert_text fade-in">
+        <h1>Đây là thành viên của chúng tôi</h1>
+    </div>
+    <div class="expert_main fade-in">
+        <!-- card-1 -->
+        <div class="card card-1 fade-in">
+            <div class="card_image fade-in">
+                <div class="overlay-gradient"></div>
+                <img src="duong.png" alt="Duong">
+            </div>
+            <div class="card_name fade-in">
+                <h1>Dương</h1>
+            </div>
+            <div class="card_job fade-in">
+                <p>Software Developer</p>
+            </div>
+            <div class="card_social fade-in">
+                <a href="https://www.facebook.com/profile.php?id=100070575127940&mibextid=ZbWKwL" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://github.com/laitung1122" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://wa.me/qr/VGBFV36LHKILH1" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card card-2 fade-in">
+            <div class="card_image fade-in">
+                <div class="overlay-gradient"></div>
+                <img src="vixay.png" alt="Julian Wan">
+            </div>
+            <div class="card_name fade-in">
+                <h1>Vixay</h1>
+            </div>
+            <div class="card_job fade-in">
+                <p>Editor</p>
+            </div>
+            <div class="card_social fade-in">
+                <a href="https://www.facebook.com/guyz.regendszy?mibextid=ZbWKwL" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://wa.me/qr/NGWZBYBLPLQFG1" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card card-3 fade-in">
+            <div class="card_image fade-in">
+                <div class="overlay-gradient"></div>
+                <img src="suoksavat.png" alt="SOUK">
+            </div>
+            <div class="card_name fade-in">
+                <h1>Soucksavath</h1>
+            </div>
+            <div class="card_job fade-in">
+                <p>Supporter and Fix letter</p>
+            </div>
+            <div class="card_social fade-in">
+                <a href="https://m.facebook.com/100042690402647" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://wa.me/qr/BEVAJ3Q3MUVHB1" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="lowerpart fade-in">
+        <button class="btn btn-viewall fade-in">View All</button>
+    </div>
+</section>
+
+        <!-- -------------------------------- -->
+        <!-- about section  -->
+        <!-- -------------------------------- -->
+
+        <section class="about" id="about">
+            <div class="about_content">
+                <div class="text">
+                    <h2>More About Us</h1>
+                        <p>Webook is an online course website that prioitizes practice over theory, with thousands of
+                            certified mentors and tens of
+                            thousands of students we can produce thosand of graduates who are immediately ready for a
+                            professional career.
+                        </p>
+                        <h1>About</h1>
+                </div>
+                <div class="image">
+
+                    <img src="https://images.unsplash.com/photo-1612296727716-d6c69d2a2cbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                        alt="">
+                </div>
+            </div>
+            <div class="about_stats">
+                <div class="card card-1 fade-in">
+                    <h1>8000</h1>
+                    <p>Students</p>
+                </div>
+                <div class="card card-1 fade-in">
+                    <h1>30</h1>
+                    <p>Experts</p>
+                </div>
+                <div class="card card-1 fade-in">
+                    <h1>15</h1>
+                    <p>Courses</p>
+                </div>
+                <div class="card card-1 fade-in">
+                    <h1>5</h1>
+                    <p>Countries</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------- -->
+        <!-- feedback -->
+        <!-- -------------------------------- -->
+        <section class="faq" id="faq">
+            <div class="faq_text">
+                <h1>FAQ</h1>
+                <hr class="line">
+            </div>
+            <div class="faq_main">
+                <div class="accordian">
+                    <div class="accordian_item fade-in2">
+                        <a href="#q1" class="link">
+                            <p>Who should take an Online Course?</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Students join our online courses for a variety of reasons and come from diverse
+                                backgrounds, professions, and age
+                                groups. With online courses, you can
+                                Advance your skill-set or begin a career change.
+                                Take the next step in your formal education.
+                                Ease the transition before entering a full-time academic program.
+                                Enjoy learning a new topic.
+                                Whatever the reason, our online courses are a flexible way of learning about the art
+                                world without disrupting your daily
+                                life.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2">
+                        <a href="#q2" class="link">
+                            <p>Are there prerequisites or language requirements?</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                There are no prerequisites. Our courses are open to students of all backgrounds who are
+                                18 years of age and older.
+                                All courses are conducted in English. Video lectures include English subtitles and the
+                                option to slow-down, pause, or
+                                replay lectures for better retention. Discussion boards are a critical component of each
+                                of our courses; therefore, we
+                                suggest students have a conversational knowledge of English when pursuing a Certificate
+                                of Completion. For any of the
+                                art writing courses, students need to be 100% proficient in written English.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2">
+                        <a href="#q3" class="link">
+                            <p>Can I take more than one course at a time?</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                If you are new to online learning, we recommend that you begin with one course. As our
+                                courses are offered frequently
+                                throughout the year, you can always come back and continue your studies with one or more
+                                topics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2">
+                        <a href="#q4" class="link">
+                            <p>My payment did not go through. What do I do?</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                We apologize for this inconvenience. We encourage you to reach out to your financial
+                                institution as further permissions
+                                may be needed to complete the payment. You are also welcome to write to
+                                online@sothebysinstitute.com for further
+                                guidance. Please wait a full 24 hours before trying again. A strong Internet connection
+                                and up-to-date browser are
+                                strongly recommended
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2" id="#q5">
+                        <a href="#q5" class="link">
+                            <p>Can I get a refund if I am unable to attend my Online Course?</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                In order to be granted a full tuition refund, you must cancel your registration by
+                                sending an email to
+                                online@sothebysinstitute.com by 5:00 pm (your local time) 5 full business days before
+                                the course’s start date. Please
+                                note we are unable to reimburse for any currency conversion fees charged by your
+                                credit-card issuer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2">
+                        <a href="#q6" class="link">
+                            <p>How do I contact technical support during my course?</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                For technical support, please email online.support@webook.com, 09:00 – 22:00 GMT, Monday
+                                – Friday. We are
+                                ready to help!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------------------- -->
+        <!-- contact -->
+        <!-- -------------------------------- -->
+        <section class="contact fade-in" id="contact">
+            <div class="contact_text">
+                <h1>Contact</h1>
+            </div>
+            <div class="contact_main">
+                <div class="input">
+                    <form action="contact">
+                        <div class="name">
+                            <label for="username">Name</label>
+                            <input type="text" placeholder="John Marine" id="username">
+                        </div>
+                        <div class="email">
+                            <label for="useremail">Email</label>
+                            <input type="email" placeholder="John@gmail.com" id="useremail">
+                        </div>
+                        <div class="textarea">
+                            <label for="usertext">Message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="submit">
+                            <button class="button-86">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="details">
+                    <div class="details_text">
+                        <h1>Get In Touch</h1>
+                        <p>20 students daily learn with e-learning. Subscribe for new updates.</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>+0123 4567 8944</p>
+                            <ion-icon name="call"></ion-icon>
+                        </li>
+                        <li>
+                            <p>help@webook.com</p>
+                            <ion-icon name="mail"></ion-icon>
+                        </li>
+                        <li>
+                            <p>102 Street london</p>
+                            <ion-icon name="location"></ion-icon>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <div class="box">
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="#">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer_main">
+            <div class="logo">
+                <img src="app/images/logo/logo.svg" alt="Webook logo">
+                <p>Get industry accredited certification and advance through our high-quality online courses.</p>
+            </div>
+        <div class="copyright">
+            <h1>2022 <span>©</span> Copyright <span>Webook</span> And Design By <a href="https://github.com/laitung1122">Duong Su😃</a>
+            </h1>
+        </div>
+    </footer>
+    <script src="app/js/script.js" defer></script>
+</body>
+
+</html>
