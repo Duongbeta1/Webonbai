@@ -112,16 +112,39 @@ const languages = {
         professional_certificates: "Professional Certificates",
         professional_certificates_text: "Receive globally recognized certificates...",
         why_choose_us: "Why<br />Choose<br />Us",
-        //card1
+        //card1 card2
         card1_title: "Lao lesson",
-        card1_status: "Live Class",
-        card1_duration: "32 Hour",
+        card2_title: "Biology lesson",
+        card1_status: "50+ Questions",
+        card2_status: "30+ Questions",
+        card1_duration: "Will update soon",
+        card2_duration: "Will update soon",
         learn_more: "Start learn",
         view_all: "Start learn",
         //info
         popular_courses_title: "Exam Preparation Questions",
         courses_heading: "Lesson",
-        backmain: "Return to home page"
+        backmain: "Return to home page",
+        //more info
+        more_about_us: "More About Us",
+        about_description: "Webook is an online course website that prioritizes practice over theory, with thousands of certified mentors and tens of thousands of students we can produce thousands of graduates who are immediately ready for a professional career.",
+        about: "About",
+        students: "Questions + Answers",
+        experts: "Members",
+        courses: "Lessons",
+        countries: "Languages",
+        //contact
+        expert_title: "These are our team group",
+        contact_title: "Contact",
+        name_label: "Name",
+        email_label: "Email",
+        message_label: "Message",
+        send_button: "Send",
+        get_in_touch: "Get In Touch",
+        details_description: "If this web have some bug, Misspelling or misinformation. Please contact us",
+        footer_description: "Get industry accredited certification and advance through our high-quality online courses.",
+        faqlao: "Lao questions are from lessons 1 to 12",
+        faq: "FAQ"
     },
     vi: {
         home: "Trang chủ",
@@ -146,14 +169,39 @@ const languages = {
         why_choose_us: "Tại sao<br />chọn<br />chúng tôi",
         //card1
         card1_title: "Môn tiếng lào",
-        card1_status: "Lớp học trực tiếp",
-        card1_duration: "32 Giờ",
+        card1_status: "50+ câu hỏi",
+        card1_duration: "Sẽ cập nhật thêm sắp tới",
+        //card2
+        card2_title: "Môn Sinh học",
+        card2_status: "30+ câu hỏi",
+        card2_duration: "Sẽ cập nhật thêm sắp tới",
         learn_more: "Bắt đầu học",
         view_all: "Bắt đầu học",
         //info
         popular_courses_title: "Câu hỏi ôn thi",
         courses_heading: "Môn học",
-        backmain: "Quay lại trang chủ"
+        backmain: "Quay lại trang chủ",
+        //more info
+        more_about_us: "Thông tin thêm về chúng tôi",
+        about_description: "Webook là một trang web khóa học trực tuyến ưu tiên thực hành hơn lý thuyết, với hàng nghìn huấn luyện viên chứng nhận và hàng chục nghìn học viên, chúng tôi có thể tạo ra hàng nghìn sinh viên tốt nghiệp sẵn sàng cho sự nghiệp chuyên nghiệp.",
+        about: "About",
+        students: "Câu hỏi + Câu trả lời",
+        experts: "Nhà phát triển",
+        courses: "Môn học",
+        countries: "Ngôn ngữ",
+        //contact
+        expert_title: "Đây là thành viên của chúng tôi",
+        contact_title: "Liên hệ",
+        name_label: "Tên",
+        email_label: "Email",
+        message_label: "Tin nhắn",
+        send_button: "Gửi",
+        get_in_touch: "Kết nối với chúng tôi",
+        faq: "Câu hỏi thường gặp",
+        details_description: "Nếu trang web có lỗi, sai chính tả hoặc thông tin. Vui lòng liên hệ với chúng tôi",
+        footer_description: "Nhận chứng chỉ được công nhận và nâng cao qua các khóa học trực tuyến chất lượng cao của chúng tôi.",
+        faqlao: "Câu hỏi môn tiếng lào có từ bài 1 đến 12"
+        
     },
     la: {
         home: "ໜ້າຫຼັກ",
@@ -177,14 +225,38 @@ const languages = {
         why_choose_us: "ເປັນເຫດທີ່<br />ເລືອກ<br />ພວກເຮົາ",
         //card1
         card1_title: "ວິຊາພາສາລາວ",
-        card1_status: "ຮຽນອອນລາຍ",
-        card1_duration: "32 ຊົ່ວໂມງ",
+        card1_status: "50+ ຄຳຖາມ",
+        card1_duration: "ຈະອັບເດດຕື່ມໃນອານາຄົດ",
+        //card2
+        card2_title: "ວິຊາຊີວະ",
+        card2_status: "30+ ຄຳຖາມ",
+        card2_duration: "ຈະອັບເດດຕື່ມໃນອານາຄົດ",
         learn_more: "ເລີ່ມຮຽນ",
         view_all: "ເລີ່ມຮຽນ",
         //info
         popular_courses_title: "ຄຳຖາມທວນເສັງ",
         courses_heading: "ວິຊາຮຽນ",
-        backmain: "ກັບຄືນໜ້າຫຼັກ"
+        backmain: "ກັບຄືນໜ້າຫຼັກ",
+        //more info 
+        more_about_us: "ພາຍໃນກ່ຽວກັບພວກເຮົາ",
+        about_description: "Webook ເປັນເວັບໄຊທີ່ມີຫຼັກສູດອອນລາຍທີ່ສົນໃຈກັບການຝຶກຫຼາຍກວ່າທິທີ, ມີຫຼາຍອາຈານທີ່ມີການຮັບຮອງ ແລະ ນັກຮຽນຫຼາຍຮອບຮອງການສົບຜົນທຸກການຮຽນຮູ້",
+        about: "About",
+        students: "ຄຳຖາມ",
+        experts: "ຜູ້ຊົມຊົນ",
+        courses: "ວິຊາ",
+        countries: "ພາສາ",
+        //contact
+        expert_title: "ເຫຼົ່ານີ້ແມ່ນສະມາຊິກຂອງພວກເຮົາ",
+        contact_title: "ຕິດຕໍ່",
+        name_label: "ຊື່",
+        email_label: "ອີເມວ",
+        message_label: "ຂໍ້ຄວາມ",
+        send_button: "ສົ່ງ",
+        get_in_touch: "ຕິດຕໍ່ຫາພວກເຮົາ",
+        details_description: "ຖ້າວ່າເວບມີຂໍ້ຜິດພາດໃດໜື່ງ, ກະລຸນາທັກຫາພວກຂ້ອຍ",
+        footer_description: "ໄດ້ຮັບໃບຮັບຮອງທີ່ເປັນທີ່ຢອມຮັບ ແລະພັດທະນາຜ່ານຄອສຮຽນອອນລາຍທີ່ມີຄຸນນະພາບສູງ.",
+        faq: "ຄຳຖາມທີ່ພົບເຫັນໄດ້ບ່ອຍ",
+        faqlao: "ຄໍາຖາມທວນວິຊາພາສາລາວມີເເຕ່ບົດທີ 1 ຫາ 12"
     },
 };
 
