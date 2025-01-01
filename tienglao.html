@@ -5,256 +5,591 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang học online</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon">
-
-    <!-- fonts link  -->
+    <title>Trang học online</title> <!-- Favicon -->
+    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon"> <!-- fonts link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-
-    <!-- css  -->
-    <link rel="stylesheet" href="app/scss/style.css">
-
-    <!-- icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet"> <!-- css  -->
+    <link rel="stylesheet" href="app/scss/style.css"> <!-- icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
 </head>
 
 <body>
-    <div id="preloader">
-    <img src="app/images/preloader.gif">
-</div>
-</div>
-<header class="header" id="header">
-    <div class="logo">
-        <img src="app/images/logo/logo.svg" alt="Logo">
+    <div id="preloader"> <img src="app/images/preloader.gif"> </div>
     </div>
-    <div class="menu-hamburger" id="toggle">
-        <!-- Phần menu hamburger nếu cần -->
-    </div>
-    <nav class="navbar" id="navbar">
-        <ul class="navbar-list" id="primary-navbar" data-visiable="false">
-            <div class="language-dropdown">
-                <button id="lang-selector-toggle" class="lang-toggle">
-                    <span id="language_name">Choose language</span> <!-- Tên ngôn ngữ sẽ hiển thị ở đây -->
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </button>
-                <ul id="lang-options-menu" class="lang-menu">
-                    <li data-lang="en">English</li>
-                    <li data-lang="vi">Tiếng Việt</li>
-                    <li data-lang="la">ພາສາລາວ</li>
-                </ul>
-            </div>
-            <li>
-                <a href="index.html" class="btn btn-get-courses" data-i18n="backmain">
-                    <span>Get Courses</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-        <section class="faq" id="faq">
-            <div class="faq_text">
-                <h1>FAQ</h1>
-                <hr class="line">
-            </div>
-            <div class="faq_main">
-                <div class="accordian">
-                    <div class="accordian_item fade-in2">
-                        <a href="#q1" class="link">
-                            <p>Who should take an Online Course?</p>
-                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                Students join our online courses for a variety of reasons and come from diverse
-                                backgrounds, professions, and age
-                                groups. With online courses, you can
-                                Advance your skill-set or begin a career change.
-                                Take the next step in your formal education.
-                                Ease the transition before entering a full-time academic program.
-                                Enjoy learning a new topic.
-                                Whatever the reason, our online courses are a flexible way of learning about the art
-                                world without disrupting your daily
-                                life.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordian_item fade-in2">
-                        <a href="#q2" class="link">
-                            <p>Are there prerequisites or language requirements?</p>
-                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                There are no prerequisites. Our courses are open to students of all backgrounds who are
-                                18 years of age and older.
-                                All courses are conducted in English. Video lectures include English subtitles and the
-                                option to slow-down, pause, or
-                                replay lectures for better retention. Discussion boards are a critical component of each
-                                of our courses; therefore, we
-                                suggest students have a conversational knowledge of English when pursuing a Certificate
-                                of Completion. For any of the
-                                art writing courses, students need to be 100% proficient in written English.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordian_item fade-in2">
-                        <a href="#q3" class="link">
-                            <p>Can I take more than one course at a time?</p>
-                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                If you are new to online learning, we recommend that you begin with one course. As our
-                                courses are offered frequently
-                                throughout the year, you can always come back and continue your studies with one or more
-                                topics.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordian_item fade-in2">
-                        <a href="#q4" class="link">
-                            <p>My payment did not go through. What do I do?</p>
-                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                We apologize for this inconvenience. We encourage you to reach out to your financial
-                                institution as further permissions
-                                may be needed to complete the payment. You are also welcome to write to
-                                online@sothebysinstitute.com for further
-                                guidance. Please wait a full 24 hours before trying again. A strong Internet connection
-                                and up-to-date browser are
-                                strongly recommended
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordian_item fade-in2" id="#q5">
-                        <a href="#q5" class="link">
-                            <p>Can I get a refund if I am unable to attend my Online Course?</p>
-                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                In order to be granted a full tuition refund, you must cancel your registration by
-                                sending an email to
-                                online@sothebysinstitute.com by 5:00 pm (your local time) 5 full business days before
-                                the course’s start date. Please
-                                note we are unable to reimburse for any currency conversion fees charged by your
-                                credit-card issuer.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordian_item fade-in2">
-                        <a href="#q6" class="link">
-                            <p>How do I contact technical support during my course?</p>
-                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                            <p>
-                                For technical support, please email online.support@webook.com, 09:00 – 22:00 GMT, Monday
-                                – Friday. We are
-                                ready to help!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------------------- -->
-        <!-- contact -->
-        <!-- -------------------------------- -->
-        <section class="contact fade-in" id="contact">
-            <div class="contact_text">
-                <h1>Contact</h1>
-            </div>
-            <div class="contact_main">
-                <div class="input">
-                    <form action="contact">
-                        <div class="name">
-                            <label for="username">Name</label>
-                            <input type="text" placeholder="John Marine" id="username">
-                        </div>
-                        <div class="email">
-                            <label for="useremail">Email</label>
-                            <input type="email" placeholder="John@gmail.com" id="useremail">
-                        </div>
-                        <div class="textarea">
-                            <label for="usertext">Message</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="submit">
-                            <button class="button-86">Send</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="details">
-                    <div class="details_text">
-                        <h1>Get In Touch</h1>
-                        <p>20 students daily learn with e-learning. Subscribe for new updates.</p>
-                    </div>
-                    <ul>
-                        <li>
-                            <p>+0123 4567 8944</p>
-                            <ion-icon name="call"></ion-icon>
-                        </li>
-                        <li>
-                            <p>help@webook.com</p>
-                            <ion-icon name="mail"></ion-icon>
-                        </li>
-                        <li>
-                            <p>102 Street london</p>
-                            <ion-icon name="location"></ion-icon>
-                        </li>
+    <header class="header" id="header">
+        <div class="logo"> <img src="app/images/logo/logo.svg" alt="Logo"> </div>
+        <div class="menu-hamburger" id="toggle">
+            <!-- Phần menu hamburger nếu cần -->
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list" id="primary-navbar" data-visiable="false">
+                <div class="language-dropdown"> <button id="lang-selector-toggle" class="lang-toggle"> <span id="language_name">🌐lang</span> <!-- Tên ngôn ngữ sẽ hiển thị ở đây -->
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                    <ul id="lang-options-menu" class="lang-menu">
+                        <li data-lang="en">English</li>
+                        <li data-lang="vi">Tiếng Việt</li>
+                        <li data-lang="la">ພາສາລາວ</li>
                     </ul>
-                    <div class="social">
-                        <div class="box">
-                            <a href="#">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a href="#">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a href="#">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a href="#">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
+                </div>
+                <li> <a href="index.html" class="btn btn-get-courses" data-i18n="backmain"> <span>Get Courses</span> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="lowerpart fade-in">
+        <button"></button>
+    </div>
+    <div class="faq_text">
+        <h2 data-i18n="faqlao">FAQ</h2>
+        <hr class="line">
+    </div>
+    <div class="faq_main">
+        <div class="accordian">
+            <div class="accordian_item fade-in2"> <a href="#q1" class="link">
+                    <p>1. ການອ່ານຕີຄວາມໝາຍເເມ່ນບົດເເນວໃດ??</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການອ່ານຕີຄວາມ ໝາຍເຖິງການອ່ານແລະການພິຈາລະນາຄວາມໝາຍກົງແລະຄວາມໝາຍອ້ອມທີ່ປາກົດຢູ່ໃນເນື້ອໃນຕ່າງໆ ແລ້ວສາມາດອະທິບາຍຄວາມໝາຍແລະຈຸດມຸ່ງໝາຍຂອງຜູ້ສົ່ງສານໄດ້. </p>
                 </div>
             </div>
-        </section>
-
+            <div class="accordian_item fade-in2"> <a href="#q2" class="link">
+                    <p>2. ປະເພດການອ່ານຕີຄວາມໝາຍເເມ່ນປະເພດເເບບໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການອ່ານແບບນີ້ ແມ່ນປະເພດການອ່ານໃນໃຈຢ່າງໜຶ່ງ ເຊິ່ງຜູ້ທີ່ອ່ານແລ້ວສາມາດ ບອກໄດ້ວ່າ ຂໍ້ຄວາມທີ່ອ່ານນັ້ນຄວາມໝາຍທີ່ແທ້ຈິງແມ່ນອັນໃດ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q3" class="link">
+                    <p>3. ການອ່ານຕີຄວາມໝາຍໃຫ້ມີປະສິດທິພາບນັ້ນຄວນປະຕິບັດເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການອ່ານຕີຄວາມໃຫ້ມີປະສິດທິພາບນັ້ນຄວນປະຕິບັດດັ່ງຕໍ່ໄປນີ້: <br>-ອ່ານເລື່ອງໃຫ້ລະອຽດສະຫຼຸບເລື່ອງທີ່ອ່ານ <br>-ຈັບຈຸດສໍາຄັນ, ປະເດັນຄວາມຄິດຂອງຜູ້ຂຽນໃຫ້ໄດ້. <br>-ພິຈາລະນາເຫດຜົນ, ເຊື່ອມໂຍງກັບພື້ນຖານຄວາມຮູ້ ແລະ ປະສົບການຂອງຜູ້ຮັບສານ. <br>-ທໍາຄວາມເຂົ້າໃຈຄໍາສັບ, ສໍານວນ, ຄໍາສໍາຄັນ ແລະ ບໍລິບົດທີ່ແວດລ້ອມ. <br>-ການຕີຄວາມບໍ່ໃຊ້ການວິຈານ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q4" class="link">
+                    <p>4. ການອ່ານວິເຄາະຢ່າງມີວິຈາລະນະຍານເເມ່ນເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການອ່ານວິເຄາະວິຈານຢ່າງມີວິຈາລະນະຍານ ໝາຍເຖິງການອ່ານໂດຍໃຊ້ຄວາມຮູ້ ຫຼື ປະສົບການຂອງຕົນມາປຽບທຽບຊັ່ງຊາແລະເລືອກຕັດສິນໃຈວ່າ: ຄວາມຮູ້ຫຼືເລື່ອງທີ່ໄດ້ອ່ານນັ້ນ ມີຈຸດດີ,ຈຸດອ່ອນແນວໃດແລະພ້ອມທີ່ຈະໃຫ້ຄວາມຄິດເຫັນເພື່ອແກ້ໄຂຈຸດອ່ອນນັ້ນໆອີກດ້ວຍ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2" id="#q5"> <a href="#q5" class="link">
+                    <p>5. ຄວາມສາມາດພື້ນຖານຂອງການອ່ານວິເຄາະຢ່າງມີວິຈາລະນະຍານມີຢ່າງໃດເເນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການອ່ານວິເຄາະວິຈານຢ່າງມີວິຈາລະນະຍານຕ້ອງມີພື້ນຖານຄວາມຮູ້ດັ່ງນີ້: <br>-ສາມາດຈໍາແນກລະຫວ່າງຂໍ້ເທັດຈິງ ແລະ ຄວາມຄິດເຫັນໄດ້. <br>-ສາມາດສະຫຼຸບເນື້ອໃນສໍາຄັນໄດ້. <br>-ສາມາດຕີລາຄາທັດສະນະ ແລະ ຈຸດປະສົງຂອງຜູ້ຂຽນໄດ້. <br>-ສາມາດເຂົ້າເຖິງອາລົມຂອງເລື່ອງໄດ້. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q6" class="link">
+                    <p>6. ວິຈາລະນະຍານເເມ່ນຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ວິຈາລະນະຍານເເມ່ນການໃຊ້ຄວາມຄິດສະຕິປັນຍາໃນການໄຕ່ຕອງສິ່ງທີ່ເຮົາໄດ້ຍິນໄດ້ຟັງ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q7" class="link">
+                    <p>7. ວິທີອ່ານວິເຄາະວິຈານຢ່າງມີວິຈາລະນະຍານມີຫຍັງເເດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການອ່ານວິເຄາະວິຈານຢ່າງມີວິຈາລະນະຍານ ສາມາດເຝິກໃຫ້ເກີດຂຶ້ນໄດ້ ແລະ ມີຂໍ້ ຄວນປະຕິບັດດັ່ງນີ້: <br>->ພິຈາລະນາຄວາມຖືກຕ້ອງຂອງພາສາທີ່ອ່ານນັ້ນ ເປັນສັນຍະລັກແທນຄວາມຮູ້ ແລະ ຄວາມຄິດຂອງຜູ້ຂຽນ. <br>-ພິຈາລະນາຄວາມຕໍ່ເນື່ອງຂອງປະໂຫຍກ <br>-ພິຈາລະນາຄວາມຕໍ່ເນື່ອງຂອງເນື້ອເລື່ອງ <br>-ຈໍາແນກຄວາມຮູ້ອອກຈາກຄວາມຄິດ <br>-ເບິ່ງຄວາມສໍາພັນຂອງຫຼັກການ ແລະ ຕົວຢ່າງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q8" class="link">
+                    <p>8. ບົດອະທິບາຍເເມ່ນບົດເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດອະທິບາຍແມ່ນບົດແຕ່ງປະເພດໜຶ່ງເຊິ່ງໃຊ້ທິດສະດີ ແລະ ຕົວຈິງມາອະທິບາຍ ຫຼື ຊີ້ແຈງດ້ວຍເຫດຜົນກ່ຽວກັບບັນຫາໃດໜຶ່ງ ເພື່ອໃຫ້ຜູ້ອ່ານຜູ້ຟັງເຂົ້າໃຈ ແລະ ເຊື່ອໝັ້ນຕໍ່ບັນຫານັ້ນ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q9" class="link">
+                    <p>9. ລະດັບຄາດໝາຍຂອງບົດອະທິບາຍມີຫຍັງເເດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> -ບົດອະທິບາຍປະເພດໃດກໍຕາມຈະຕ້ອງປະກອບດ້ວຍ 3 ພາກສ່ວນຄື: ຕັ້ງບັນຫາ, ແກ້ ໄຂບັນຫາ ແລະ ສະຫຼຸບບັນຫາ. <br>-ບົດອະທິບາຍຈະຕ້ອງມີເນື້ອໃນອຸດົມສົມບູນ ແລະ ຖືກຕ້ອງ ເຊິ່ງສະເເດງບັນຫາໄດ້ຢ່າງຫຼາຍດ້ານ <br>-ຮູບການຂອງບົດອະທິບາຍ ຕ້ອງສະເໜີຕາມວິທີຄົ້ນຄິດຕຶກຕອງຢ່າງຈະແຈ້ງ ໝາຍ ຄວາມວ່າ ຕ້ອງຈັດວາງເປັນລໍາດັບໃຫ້ເໝາະສົມ ແລະ ຖືກຕ້ອງ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q10" class="link">
+                    <p>10. ຢາກເເຕງບົດອະທິບາຍໄດ້ດີຄວນປະຕິບັດເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຢາກແຕ່ງບົດອະທິບາຍໄດ້ດີຄວນປະຕິບັດໄປຕາມຂັ້ນຕອນດັ່ງນີ້:<br> *ຊອກຮູ້ລະດັບຄາດໝາຍຂອງຫົວບົດ<br> *ສ້າງໂຄງຮ່າງຂອງບົດອະທິບາຍ<br> *ການແຕ່ງຕົວຈິງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q11" class="link">
+                    <p>11. ບົດພິສູດເເມ່ນບົດເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດພິສູດ ແມ່ນບົດແຕ່ງປະເພດໜຶ່ງ ເຊິ່ງໃຊ້ຫຼັກຖານຕົວຈິງມາອ້າງອີງ ແລະ ຢັ້ງຢືນລັກສະນະຕົວຈິງຂອງບັນຫາຕ່າງໆທີ່ຍົກຂຶ້ນມາພິສູດ. ການພິສູດບັນຫາ ແມ່ນເຮັດໃຫ້ບັນຫານັ້ນຈະແຈ້ງຂຶ້ນພ້ອມທັງຢັ້ງຢືນເອົາບັນຫານັ້ນ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q12" class="link">
+                    <p>12. ການເເຕັ່ງບົດພິສູດຕ້ອງປະຕິບັດຂັ້ນຕອນໃດເເນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ກ່ອນຈະແຕ່ງບົດພິສູດໜຶ່ງໆ ໃຫ້ໄດ້ດີຕ້ອງປະຕິບັດໄປຕາມຂັ້ນຕອນຕ່າງໆດັ່ງນີ້: -ຊອກຮູ້ເນື້ອໃນ ແລະ ລະດັບຄາດໝາຍຂອງບັນຫາທີ່ເອົາມາພິສູດ<br> -ຊອກຫຼັກຖານມາອ້າງອີງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q13" class="link">
+                    <p>13. ບົດວິຈານເເມ່ນບົດເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດວິຈານ ແມ່ນບົດແຕ່ງປະເພດໜຶ່ງເຊິ່ງອີງໃສ່ຄວາມຮູ້,ຄວາມຄິດ ແລະ ທັດສະນະຫຼັກໝັ້ນຂອງຜູ້ຂຽນເພື່ອສັງເກດເບິ່ງບັນຫານັ້ນວ່າຖືກຫຼືຜິດ.ຈາກນັ້ນ, ກໍຖອດຖອນເອົາຄວາມໝາຍ ແລະ ຄຸນປະໂຫຍດຂອງບັນຫານັ້ນໂດຍມີການຕໍາໜີ,ການພິຈາລະນາ ແລະ ການຄົ້ນຄິດຕຶກຕອງໄປພ້ອມ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q14" class="link">
+                    <p>14. ລັກສະນະຂອງບົດວິຈານເປັນເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດວິຈານມີຫຼາຍລັກສະນະຕ່າງໆດັ່ງນີ້: *ວິຈານບັນຫາໃດໜຶ່ງທີ່ຖືກຕ້ອງສົມບູນ.<br> *ວິຈານບັນຫາໃດໜຶ່ງທີ່ຖືກເເດ່ຜິດເເດ່.<br> *ວິຈານບັນຫາໃດໜຶ່ງຜິດໝົດ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q15" class="link">
+                    <p>15. ບົດອະທິບາຍ,ບົດພິສູດ ເເລະ ບົດວິຈານເເຕກຕ່າງກັນເເນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດອະທິບາຍ,ບົດພິສູດ,ບົດວິຈານ ມີຄວາມເເຕກຕ່າງກັນຄື:<br> *ຈຸດຄືກັນ<br> -ຢູ່ໃນບົດອະທິບາຍ, ບົດພິສູດ ຫຼື ບົດວິຈານ, ແຕ່ລະປະເພດດັ່ງກ່າວລ້ວນແຕ່ຕ້ອງການໃຊ້ການອະທິບາຍ,ພິສູດ ແລະ ວິຈານຮ່ວມກັນຢູ່ໃນບົດດຽວກັນພຽງແຕ່ຕ້ອງການໜ້ອຍ ຫຼື ຫຼາຍຕ່າງກັນເທົ່ານັ້ນ.<br> *ຈຸດຕ່າງກັນ<br> -ໃນບົດອະທິບາຍການໃຊ້ເຫດຜົນ ເພື່ອຊີ້ແຈງບັນຫາເປັນສ່ວນສໍາຄັນ, ການອ້າງຫຼັກຖານຕົວຈິງແລະວິຈານເປັນສ່ວນສໍາຮອງ.<br> ໃນບົດພິສູດ ການອ້າງຫຼັກຖານຕົວຈິງມາຢັ້ງຢືນເປັນສ່ວນສໍາຄັນ, ການຊີ້ແຈງບັນຫາ ແລະ ວິຈານເປັນສ່ວນສໍາຮອງ.<br> ສໍາລັບບົດວິຈານນັ້ນປະກອບດ້ວຍສ່ວນຕ່າງໆຄືຂ້າງເທິງແຕ່ເປັນພຽງສໍາຮອງ,ສ່ວນທີ່ສໍາຄັນ ແລະ ຕົ້ນຕໍແມ່ນການໄຈ້ແຍກ, ວິຈານອັນຖືກອັນຜິດ ແລະ ຄຸນປະໂຫຍດຂອງບັນຫາ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q16" class="link">
+                    <p>16. ສີລະປະເເຫ່ງການຄົ້ນຄິດຕຶກຕອງຂອງບົດອະທິບາຍເເມ່ນຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ສິລະປະແຫ່ງການຄົ້ນຄິດຕຶກຕອງ ແມ່ນເວົ້າເຖິງສິລະປະໃນການສະເໜີເຫດຜົນເພື່ອຢັ້ງຢືນ ຫຼື ປະຕິເສດຄວາມສັງເກດອັນໃດອັນໜຶ່ງຄໍາເຫັນໃດຫນຶ່ງ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q17" class="link">
+                    <p>17. ບົດລະຄອນແມ່ນຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດລະຄອນແມ່ນ ບົດປະພັນວັນນະຄະດີປະເພດຫນື່ງທີ່ຂຽນຂື້ນເພື່ອສະແດງງຫຼືອ່ານເຊີ່ງມີເນື້ອໃນໃຫ້ທັງຄວາມຄິດແລະຄວາມບັນເທີງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#18" class="link">
+                    <p>18. ບົດລະຄອນມີຈັກປະເພດ?ຄືປະເພດໃດແນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ບົດລະຄອນມີ3ປະເພດຄື: ລະຄອນໂສກ,ລະຄອນຕາຫຼົກ,ລະຄອນປະສົມ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#19" class="link">
+                    <p>19. ສ່ວນປະກອບຂອງບົດລະຄອນມີຫຍັງແນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ສ່ວນປະກອບຂອງບົດລະຄອນມີ5ສ່ວນປະກອບດັ່ງນີ້ຄື:<br>-ແນວຄິດແລະສາລະ<br>-ໂຄງເລື່ອງແລະເນື້ອເລື່ອງ<br>-ຕົວລະຄອນ<br>-ບົດສົນທະນາ<br>-ສາກ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#20" class="link">
+                    <p>20. ວິທີຂຽນບົດລະຄອນຄວນເຮັດແນວໃດເພື່ອໃຫ້ມີຄວາມສົນໃຈ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ວິທີຂຽນບົດລະຄອນຄວນສະເຫນີລາຍລະອຽດຂອງເຫດການແລະເນື້ອເລື່ອງໃນບົດລະຄອນຜູ້ ຂຽນຕ້ອງເລືອກສະເຫນີຕອນທີ່ສໍາຄັນເຊິ່ງຈະນຳໄປສູ່ເປົ້າຫມາຍໃນການສະເຫນີເລື່ອງ, ການດໍາເນີນເລື່ອງແລະການປິດເລື່ອງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#21" class="link">
+                    <p>21. ເລື່ອງສັ້ນແມ່ນຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ເລື່ອງສັ້ນ ແມ່ນບົດປະພັນວັນນະຄະດີປະເພດໜຶ່ງທີ່ມີຂະໜາດສັ້ນ, ຕົວລະຄອນບໍ່ຫຼາຍ. ເລື່ອງສັ້ນ ເປັນເລື່ອງທີ່ເກີດຈາກຈິນຕະນາການ,ແຕ່ເລື່ອງທີ່ເກີດຈາກຈິນຕະນາການນັ້ນຕ້ອງມີຄວາມຈິງ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#22" class="link">
+                    <p>22. ລັກສະນະຂອງເລື່ອງສັ້ນເປັນຄືແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ລັກສະນະຂອງເລື່ອງສັ້ນຕາມຫຼັກສາກົນແລ້ວຈະມີຄວາມຍາວຢູ່ລະຫວ່າງ 1.000 ຄໍາເຖິງ 10.000 ຄໍາ ຫຼື 2.000 ຄໍາເຖິງ 120.000 ຄໍາ, ສິ່ງສໍາຄັນທີ່ສຸດຂອງເລື່ອງສັ້ນຄືກະທູ້ອັນເປັນແນວຄິດເອກ ທີ່ສ້າງຄວາມປະທັບໃຈພຽງຢ່າງດຽວໃຫ້ແກ່ຜູ້ອ່ານ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#23" class="link">
+                    <p>23. ເລື່ອງສັ້ນມີອົງປະກອບຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ອົງປະກອບຂອງເລື່ອງສັ້ນປະກອບມີ:<br>1.ໂຄງເລື່ອງແລະເນື້ອເລື່ອງ<br>2.ຕົວລະຄອນ<br>3.ຄວາມສົມບູນ<br>4.ຄຸນຄ່າແລະສາລະ<br>>5.ບົດສົນທະນາ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#24" class="link">
+                    <p>24. ຂັ້ນຕອນການຂຽນເລືອງສັ້ນປະກອບມີຫຍັງແນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການຂຽນເລື່ອງສັ້ນແຕ່ລະຄົນຈະມີວິທີຫຼືວາດແຕ່ງທີ່ບໍ່ເຫມືອນກັນ.ແຕ່ໂດຍພື້ນຖານແລ້ວຈະມີຂັ້ນຕອນທີ່ຄ້າຍຄືກັນດັ່ງລາຍລະອຽດລຸ່ມນີ້:<br>1. ເລື່ອງຫັວເລື່ອງທີ່ຈະຂຽນ<br>2. ຈຸດປະສົງແລະເປົ້າຫມາຍ<br>3. ຊອກຫາຂໍ້ມູນ<br>4. ສ້າງໂຄງເລື່ອງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q25" class="link">
+                    <p>25. ວິທີຂຽນເລື່ອງສັ້ນຄວນຄໍານຶງເຖິງຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ວິທີຂຽນເລື່ອງສັ້ນຄວນຄໍານຶງດັງຕໍ່ໄປນີ້:<br>1. ຈຸດຂອງເລື່ອງ<br>2. ການສ້າງຕົວລະຄອນ<br>3. ການດຳເນີນເລື່ອງ<br>4. ການບັນຍາຍສາກ<br>5. ການຈົບເລື່ອງ<br>6. ການໃຊ້ພາສາ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#26" class="link">
+                    <p>26. ນິທານແມ່ນຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ນິທານ ແມ່ນບົດເລື່ອງທີ່ເກົ່າແກ່ເຊິ່ງປະກອບດ້ວຍເຫດການ, ມີເນື້ອເລື່ອງ ແລະ ຈຸດຈົບຂອງເລື່ອງ.ນິທານຈຶ່ງມີຫຼາຍປະເພດເຊັ່ນ: ນິທານສັດ, ນິທານຄົນ, ນິທານຄົນກັບສັດ, ນິທານ ຕະຫຼົກຊວນຫົວ, ນິທານອັດສະຈັນ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#27" class="link">
+                    <p>27. ອົງປະກອບຂອງນິທານປະກອບມີຫຍັງແນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ອົງປະກອບຂອງນິທານປະກອບມີແນວຄິດຫຼືກະທູ້ຂອງເລື່ອງ, ໂຄງເລື່ອງ, ຕົວລະຄອນສຳຄັນແລະຕົວລະຄອນປະກອບ, ສາກ, ບົດສົນທະນາ, ຄະຕິເຕືອນໃຈຫຼື"ສາລະ"ທີ່ໄດ້ຈາກເລື່ອງ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#28" class="link">
+                    <p>28. ການໃຊ້ພາສາໃນນິທານຄວນຄໍານຶງຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການໃຊ້ພາສາໃນນິທານຄວນຄໍານຶງເຖີງ;<br>-ລັກສະນະຂອງນິທານ<br>-ລັກການໃຊ້ພາສາໃນນິມານ<br>-ການໃຊ້ພາສາຄວນຄໍານຶງເຖິງໄວອາຍຸຂອງຜູ້ອ່ານ<br>-ມີການເກາະກ່າຍ<br>-ໃຊ້ພາສາໃຫ້ເຫມາະສົມກັບຕົວລຄອນ<br>-ບໍ່ໃຊ້ພາສາທີ່ສະແດງຄວາມຮູ້ສືກແທນຜູ້ອ່ານ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#29" class="link">
+                    <p>29. ຂັ້ນຕອນການຂຽນນິທານມີຂໍ້ຄວນຄໍານຶງຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຂັ້ນຕອນໃນກາຂຽນນິທານມີດັງນີ້:<br>-ກຳນົດຈຸດປະສົງ<br>-ສ້າງຕົວລະຄອນ<br>-ວາງໂຄງເລື່ອງ<br>-ລົງມືຂຽນ<br>-ສະຫຼຸບຂໍ້ຄິດທີ່ໄດ້. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#30" class="link">
+                    <p>30. ວິທີຂຽນນິທານຄວນເຮັດແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ວິທີການຂຽນນິທານຄວນປະຕິບັດດັງນີ້:<br>-ຜູ້ທີ່ຂຽນນິທານຕ້ອງຮູ້ຈະສັງເກດສິ່ງຕ່າງໆ<br>-ຕ້ອງຮູ້ໃຊ້ສຳນວນສົມກັບປະເພດແລະລັກສະນະຂອງແຕ່ລະຕົວລະຄອນ<br>-ຜູ້ຂຽນຄວນເຝີກນິໄສໃຫ້ເປັນຄົນຊ່າງສັງເກດ <br>-ເຝິກການຂຽນຢູ່ສະເຫມີ<br>-ເມື່ອຂຽນສຳເລັດແລ້ວໃຫ້ມື້ອື່ນທີ່ມີຄວາມຮູ້ໃນການອ່ານ<br>-ລອງອ່ານ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#31" class="link">
+                    <p>31. ນະວະນິຍາຍແມ່ນຫຍັງ?ມີລັກສະນະແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> -ນະວະນິຍາຍ ແມ່ນການຂຽນແບບຮ້ອຍແກ້ວປະເພດບັນເທີງຄະດີຊະນິດໜຶ່ງເປັນເລື່ອງເລົ່າທີ່ສົມມຸດຂຶ້ນ ແຕ່ເປັນການສົມມຸດທີ່ມີຄວາມສົມຈິງທັງສະພາບເຫດການພຶດຕິກຳຂອງຕົວລະຄອນ<br>-ມີລັກສະນະດັງນີ້:ແຕ່ງດ້ວຍຄໍາຮ້ອຍແກ້ວ,ຈຸດມຸ່ງໝາຍໃນການແຕ່ງ ແມ່ນເລັ່ງໃສ່ຄວາມບັນເທີງເປັນຫຼັກ,ຕົວລະຄອນ ອາດເປັນຄົນ, ສັດ ຫຼື ວັດຖຸສິ່ງຂອງອື່ນໆກໍໄດ້,ສາກແລະບັນຍາກາດ,ການດໍາເນີນເລື່ອງມີລັກສະນະຫຼາຍຢ່າງປະສົມກັນ,ບົດສົນທະນາຕ້ອງເໝືອນກັບຊີວິດຈິງ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#32" class="link">
+                    <p>32. ນະວະນິຍາຍມີຈັກປະເພດ?ປະເພດໃດແນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ນະວະນິຍາຍແບ່ງອອກເປັນ 2 ປະເພດຄື:<br>-ປະເພດແຕ່ງຕາມຄວາມຈີງ<br>-ແຕ່ງຕາມຈີນຕະນາການ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#33" class="link">
+                    <p>34. ອົງປະກອບຂອງນະວະນິຍາຍມີຫຍັງແນ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ອົງປະກອບຂອງນະວະນິຍາຍປະກອບມີ:<br>-ເນື້ອເລື່ອງ ແລະ ສາລະ<br>-ໂຄງເລື່ອງ ແລະ ເນື້ອເລື່ອງ<br>-ວິທີການແຕ່ງ<br>-ສາກ<br>-ບົດສົນທະນາ ແລະ ສໍານວນພາສາ<br>-ທັດສະນະຂອງຜູ້ແຕ່ງ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#34" class="link">
+                    <p>34. ການວິເຄາະນະວະນິຍາຍຢ່າງລະອຽດເພື່ອຫາຈຸດດີແລະຈຸດອ່ອນເຮົາຕ້ອງວິເຄາະຕາມອົງປະກອບອັນໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການພິຈາລະນາສຶກສານະວະນິຍາຍຢ່າງລະອຽດເພື່ອຫາຈຸດດີແລະຈຸດອ່ອນ ໂດຍພິຈາລະນາອົງປະກອບສ່ວນຕ່າງໆດັງນີ້:<br>-ເນື້ອເລື່ອງ ແລະ ສາລະ<br>->ໂຄງເລື່ອງ ແລະ ເນື້ອເລື່ອງ<br>-ວິທີການແຕ່ງ<br>-ຕົວລະຄອນ<br>-ບັນຍາກາດ<br>-ສາກ<br>-ບົດສົນທະນາແລະສໍານວນພາສາ<br>-ທັດສະນະຂອງຜູ້ຂຽນ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#35" class="link">
+                    <p>35. ຈະລິຍະທຳໃນການເວົ້າແມ່ນຫຍັງ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຈະລິຍະທຳ ໃນການເວົ້າຈຶ່ງໝາຍເຖິງການປະພຶດ ຫຼື ກິລິຍາຂອງຜູ້ເວົ້າທີ່ຕ້ອງປະພຶດເພື່ອໃຫ້ຜູ້ຟັງເກີດຄວາມເຊື່ອຖື, ສັດທາໃນການເວົ້າຂອງຕົນ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q36" class="link">
+                    <p>36. ຄຸນນະທໍາໃນການເວົ້າແມ່ນແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຄຸນນະທໍາໃນການເວົ້າ ໝາຍເຖິງສະພາບຄຸນງາມ,ຄວາມດີຂອງການເວົ້າໄດ້ແກ່ການເວົ້າໃຫ້ຖືກກາລະເທສະ,ເວົ້າຄໍາສັດຈິງ,ເວົ້າອ່ອນຫວານ,ເວົ້າມີປະໂຫຍດ ແລະ ເວົ້າມີເມດຕາຈິດ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q37" class="link">
+                    <p>37.ມາລະຍາດໃນການເວົ້າແມ່ນແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ມາລະຍາດຂອງການເວົ້າ ໝາຍເຖິງຜູ້ເວົ້າທີ່ມີກິລິຍາວາຈາສຸພາບຮຽບຮ້ອຍ,ທ່າທາງສະຫງ່າຜ່າເຜີຍ,ອ່ອນໂຍນ,ໃບໜ້າຍິ້ມແຍ້ມແຈ່ມໃສ,ບໍ່ໃຊ້ທ່າທາງປະກອບການເວົ້າຫຼາຍຈົນເກີນໄປ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q38" class="link">
+                    <p>38. ຈະລິຍະທຳທີ່ສໍາຄັນເປັນພິເສດຂອງຜູ້ເວົ້າມີອັນໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຜູ້ເວົ້າທີ່ດີຕ້ອງມີທັກສະໃນການເວົ້າເປັນຢ່າງດີ ແລະ ມີມາລະຍາດຂອງຄົນດີປະກອບ ກັນ ຈັນຍາມາລະຍາດທີ່ຕ້ອງເນັ້ນເປັນພິເສດຄື: <br>- ຄວາມສຸພາບຮຽບຮ້ອຍ <br>- ຄວາມຈິງໃຈ <br>- ຄວາມຮັບຜິດຊອບ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q39" class="link">
+                    <p>39. ອົງປະກອບຂອງການເວົ້າປະກອບມີຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ອົງປະກອບຂອງການເວົ້າມີ 4 ອົງປະກອບຄື: <br>- ຜູ້ເວົ້າ <br>- ຜູ້ຟັງ <br>- ໂອກາດ <br>- ເນື້ອໃນ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q40" class="link">
+                    <p>40. ປະເພດຂອງການເວົ້າມີອັນໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ປະເພດຂອງການເວົ້າມີ 4 ປະເພດຄື: <br>- ການເວົ້າແບບບໍ່ກຽມຕົວ <br>- ການເວົ້າແບບອ່ານຈາກຕົ້ນເລື່ອງ <br>- ການເວົ້າແບບຈື່ຈໍາ <br>- ການເວົ້າແບບມີການບັນທຶກ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q41" class="link">
+                    <p>41. ການກຽມເລື່ອງທີ່ຈະເວົ້າມີອັນໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການກຽມເລື່ອງທີ່ຈະເວົ້າມີຄື: <br>- ການວາງໂຄງເລື່ອງ <br>- ການຂະຫຍາຍເນື້ອໃນ <br>- ໃຊ້ອຸປະກອນປະກອບ <br>- ກ່ອນເວົ້າກໍຕ້ອງມີການກະກຽມ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#42" class="link">
+                    <p>42. ກຽມການໃຊ້ພາສາປະກອບມີອັນໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> - ຕ້ອງໃຊ້ຄໍາສັບທີ່ກົງກັບຄວາມໝາຍ ບໍ່ຄວນເວົ້າໃຫ້ມີລັກສະນະກວມລວມ. <br>- ໃຊ້ຄໍາສັບໂດຍຄໍານຶງເຖິງກາລະ, ບຸກຄົນ, ສະຖານະການ ແລະ ເນື້ອໃນທີ່ຕ້ອງເວົ້າ. <br>- ໃຊ້ຄໍາສັບທີ່ຖືກຫຼັກພາສາຈະຊ່ວຍໃຫ້ສື່ສານໄດ້ຊັດເຈນ. <br>- ໃຊ້ຄໍາສັບກະທັດຮັດ, ບໍ່ຍືດຍາວ, ຟູມເຟືອຍ. <br>- ບໍ່ໃຊ້ຄໍາຊໍ້າກັນຫຼາຍເທື່ອ. <br>- ໃຊ້ສໍານວນໂວຫານ, ສຸພາສິດ ແລະ ຄໍາພັງເພີຍທີ່ຖືກຕ້ອງເໝາະສົມກັບເນື້ອໃນ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q43" class="link">
+                    <p>43. ສິລະປະການເວົ້າມີຂໍ້ຄວນສຶກສາຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> will update soon </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q44" class="link">
+                    <p>44. ຈັງຫວະການເວົ້າມີຄວາມສໍາຄັນແນວໃດຕໍ່ຜູ້ເວົ້າ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ໃນພາສາລາວມີເຄື່ອງໝາຍວັກຕອນຢ່າງຊັດເຈນ. ດັ່ງນັ້ນ, ເວລາເວົ້າຈະຕ້ອງຄໍານຶງ ເຖິງບັນຫາດັ່ງກ່າວ. ການເວົ້າມີຈັງຫວະອອກສຽງໃຫ້ຈະແຈ້ງທຸກຖ້ອຍທຸກຄໍາ ບໍ່ເວົ້າໄວ ຫຼື ຊ້າຈົນເກີນໄປ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q45" class="link">
+                    <p>45. ຄຸນນະພາບຂອງສຽງທີ່ມີບັນຫາມີຈັກກໍລະນີ? ກໍລະນີໃດແດ່ ແລະ ມີວິທີແກ້ໄຂແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຄຸນນະພາບຂອງສຽງທີ່ເຮັດໃຫ້ການເວົ້າມີບັນຫາບໍ່ໜ້າສົນໃຈມີດັ່ງນີ້: <br>- ສຽງເບົາ ແລະ ບໍ່ຊັດເຈນ <br>- ສຽງແຂງ ແລະ ແຫບແຫ້ງ <br>- ສຽງຕິດຄັດ (ສຽງບໍ່ມີຄວາມໝາຍ) </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q46" class="link">
+                    <p>46. ລີລາການເວົ້າມີຂໍ້ຄວນລະວັງຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການປ່ຽນລີລາການເວົ້າມີຂໍ້ຄວນລະວັງດັ່ງນີ້: <br>- ເນັ້ນສຽງໃຫ້ຖືກຈຸດທີ່ຄວນເນັ້ນ. <br>- ມີຈັງຫວະການເນັ້ນ ໝາຍຄວາມວ່າບໍ່ເນັ້ນສຽງຕະຫຼອດເວລາ ເພາະຈະບໍ່ເຮັດໃຫ້ ຜູ້ຟັງຮູ້ໄດ້ວ່າຕອນໃດສໍາຄັນກວ່າກັນ. <br>- ບໍ່ຢຸດດົນເກີນໄປ ແລະ ບໍ່ຢໍ້າຄືນຄວາມເກົ່າເກີນກວ່າສອງຄັ້ງ ເພາະຈະເຮັດໃຫ້ ຜູ້ຟັງເບື່ອໜ່າຍ ຫຼື ອາດຈະຄິດວ່າຜູ້ເວົ້າບໍ່ຊ່ຽວຊານໃນເລື່ອງນັ້ນແທ້. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q47" class="link">
+                    <p>47. ບຸກຄະລິກະພາບຂອງຜູ້ເວົ້າມີຫຍັງແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການສະແດງທ່າທີປະກອບການເວົ້າມີດັ່ງນີ້: <br>- ການໃຊ້ຫົວ <br>- ການສະແດງສີໜ້າ <br>- ການໃຊ້ສາຍຕາ <br>- ການວາງຕົວ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#48" class="link">
+                    <p>48. ການສ້າງຄວາມເຊື່ອໝັ້ນຂອງຕົນເອງມີຄວາມສໍາຄັນຄືແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການສ້າງຄວາມເຊື່ອໝັ້ນໃນຕົນເອງປະຕິບັດດັ່ງນີ້: <br>- ຜູ້ເວົ້າຈະຕ້ອງກຽມຕົວໃຫ້ພ້ອມທາງດ້ານເນື້ອໃນ ແລະ ບຸກຄະລິກກະພາບ <br>- ໃນຂະນະທີ່ກໍາລັງເວົ້າ </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q49" class="link">
+                    <p>49. ການສໍາພາດແມ່ນຫຍັງ? ມີຈັກຮູບແບບ? ຮູບແບບໃດແດ່? ເວົ້າແຈ້ງແຕ່ລະຮູບແບບ.</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການສໍາພາດຄື ການທີ່ຜູ້ສໍາພາດ ແລະ ຜູ້ໃຫ້ສໍາພາດສົນທະນາກັນ ໂດຍມີວັດຖຸປະສົງ ທີ່ແນ່ນອນ. <br>ການສໍາພາດມີ 2 ຮູບແບບຄື: <br>1. ແບບບໍ່ມີພິທີການ: <br>- ເປັນການສໍາພາດທີ່ມີລັກສະນະເປັນກັນເອງ ຫຼື ເປັນສ່ວນຕົວ. <br>2. ແບບເປັນພິທີການ: <br>- ມີການນັດໝາຍ ວັນ, ເວລາ ຊັດເຈນ. <br>- ອາດຈະສົ່ງຫົວຂໍ້ສໍາພາດໄປໃຫ້ຜູ້ສໍາພາດລ່ວງໜ້າ. <br>- ເປັນການສໍາພາດຜູ້ອາວຸໂສ, ບຸກຄົນສໍາຄັນ ແລະ ບຸກຄົນທີ່ບໍ່ຄຸ້ນເຄີຍ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#50" class="link">
+                    <p>50. ຄຸນສົມບັດຂອງຜູ້ສໍາພາດມີແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຄຸນສົມບັດຂອງຜູ້ສໍາພາດມີຄື: <br>- ມີຈຸດປະສົງຊັດເຈນ ກຽມຄໍາຖາມໃຫ້ຖືກຕາມຈຸດປະສົງ. <br>- ມີມະນຸດສຳພັນດີ. <br>- ມີບຸກຄະລິກກະພາບດີ ທັງການແຕ່ງກາຍ ແລະ ກິລິຍາທ່າທາງ. <br>- ມີມາລະຍາດໃນການສົນທະນາທີ່ດີ. <br>- ໃຊ້ພາສາທີ່ຊັດເຈນ ບໍ່ຍືດຍາວຄຸມເຄືອ. <br>- ກົງກັບເວລາ (ຄວນໄປກ່ອນເວລາເລັກນ້ອຍ ແຕ່ເຂົ້າພົບກົງກັບເວລາ). <br>- ກຽມຕົວມາກ່ອນຢ່າງດີໄດ້ແກ່: <br>+ ຄວາມຮູ້ເລື່ອງທີ່ຈະສໍາພາດ. <br>+ ອຸປະກອນທີ່ຕ້ອງໃຊ້ໃນການສໍາພາດ. <br>- ຕ້ອງຂໍອະນຸຍາດລ່ວງໜ້າຖ້າຕ້ອງການອັດສຽງ ຫຼື ຖ່າຍທໍາວີດີໂອ. <br>- ບໍ່ຄວນເລັ່ງລັດ ຟ້າວຟັງໃນການຕອບຄໍາຖາມຂອງຜູ້ໃຫ້ສໍາພາດ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q51" class="link">
+                    <p>51. ຄຸນສົມບັດຂອງຜູ້ໃຫ້ສໍາພາດມີແນວໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຄຸນສົມບັດຂອງຜູ້ໃຫ້ສໍາພາດມີຄື: <br>- ມີຄວາມຮູ້ດີໃນເລື່ອງທີ່ຈະໃຫ້ສໍາພາດ. <br>- ຖືກຕາມເວລາ. <br>- ມີທ່າທີກະຕືລືລົ້ນ. <br>- ບໍ່ສະແດງທ່າທີເບື່ອໜ່າຍ. <br>- ຖາມຄືນເມື່ອບໍ່ເຂົ້າໃຈຄໍາຖາມ. <br>- ຕອບໃຫ້ກົງກັບປະເດັນ. <br>- ບໍ່ຮຽກຮ້ອງຄ່າຕອບແທນ. <br>- ບໍ່ສະແດງຄວາມອວດສົ່ງທະນົງຕົວ ຂົ່ມເພິ່ນຍໍໂຕ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q52" class="link">
+                    <p>52. ການສໍາພາດເພື່ອສະໝັກເຂົ້າເຮັດວຽກ ຜູ້ສະໝັກຕ້ອງມີການກະກຽມແນວໃດແດ່?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ການກຽມຕົວສໍາພາດຄື: <br>- ນັດໝາຍໄວ້ລ່ວງໜ້າ ໂດຍແຈ້ງເລື່ອງ ວັນ ເວລາ. <br>- ກຽມຫົວຂໍ້ເລື່ອງທີ່ຈະສໍາພາດຕາມລໍາດັບຈາກງ່າຍໄປຫາຍາກ. <br>- ກຽມອຸປະກອນທີ່ຈໍາເປັນໃຫ້ພ້ອມ. <br>- ກຽມສະຖານທີ່ໃຫ້ເໝາະສົມກັບຜູ້ໃຫ້ສໍາພາດ. <br>- ສຶກສາຄວາມເປັນມາຂອງຜູ້ໃຫ້ສໍາພາດໄວ້ລ່ວງໜ້າ. <br>- ບໍ່ຄວນໃຊ້ຄໍາຖາມນໍາ. <br>- ການເລີ່ມຕົ້ນ ແລະ ການສິ້ນສຸດການສໍາພາດ. <br>- ສະແດງຄວາມເຄົາລົບຕ້ອນຮັບທັກທາຍພໍສົມຄວນ. <br>- ສ້າງຄວາມຄຸ້ນເຄີຍ. <br>- ບໍ່ຄວນສໍາພາດດົນຈົນຜູ້ໃຫ້ສໍາພາດອຶດອັດ. <br>- ເມື່ອຈົບການສໍາພາດສະແດງຄວາມຂອບໃຈ ແລະ ລາກັບ. </p>
+                </div>
+            </div>
+            <div class="accordian_item fade-in2"> <a href="#q53" class="link">
+                    <p>53. ຜູ້ທີ່ຈະສໍາພາດເອົາພະນັກງານເຂົ້າເຮັດວຽກງານຕ່າງໆຕ້ອງປະຕິບັດແນວໃດ?</p>
+                    <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                    <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p> ຜູ້ທີ່ຈະສໍາພາດເອົາພະນັກງານເຂົ້າເຮັດວຽກງານຕ່າງໆຕ້ອງປະຕິບັດຄື: <br>- ຈັດຫ້ອງສໍາພາດທີ່ບໍ່ມີສິ່ງລົບກວນ ສະບາຍ ແລະ ສະຫງົບ. <br>- ມີມະນຸດສຳພັນດີ, ມີທ່າທີເປັນມິດ. <br>- ພິຈາລະນາຄວາມສາມາດເປັນຫຼັກ (ເກນ). <br>- ຖາມຈາກເລື່ອງທົ່ວໄປຈົນຮອດເລື່ອງຄວາມສາມາດໃນການເຮັດວຽກ ຄວາມຮູ້ກ່ຽວກັບ ໜ່ວຍງານ ເພື່ອເບິ່ງຄວາມສາມາດ ແລະ ຄວາມສົນໃຈ. <br>- ມີໃຈເປັນທໍາ ໃຊ້ຄໍາຖາມທີ່ມີຄວາມຍາກງ່າຍໃກ້ຄຽງກັນສໍາລັບຜູ້ສໍາພາດທຸກຄົນ. <br>- ມີແບບບັນທຶກເພື່ອສະແດງຂໍ້ມູນ. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section> <!-- -------------------------------- -->
+    <!-- contact -->
+    <!-- -------------------------------- -->
+    <section class="contact fade-in" id="contact">
+        <div class="contact_text">
+            <h1 data-i18n="contact_title">Contact</h1>
+        </div>
+        <div class="contact_main">
+            <!-- Input Form -->
+            <div class="input">
+                <form action="contact">
+                    <div class="name"> <label for="username" data-i18n="name_label">Name</label> <input type="text" placeholder="Dương" id="username"> </div>
+                    <div class="email"> <label for="useremail" data-i18n="email_label">Email</label> <input type="email" placeholder="laitung94750@gmail.com" id="useremail"> </div>
+                    <div class="textarea"> <label for="usertext" data-i18n="message_label">Message</label> <textarea name="" id="usertext" cols="30" rows="10"></textarea> </div>
+                    <div class="submit"> <button class="button-86" data-i18n="send_button">Send</button> </div>
+                </form>
+            </div> <!-- Details Section -->
+            <div class="details">
+                <div class="details_text">
+                    <h1 data-i18n="get_in_touch">Get In Touch</h1>
+                    <p data-i18n="details_description">20 students daily learn with e-learning. Subscribe for new updates.</p>
+                </div>
+                <ul>
+                    <li>
+                        <p>+85602093496192</p>
+                        <ion-icon name="call"></ion-icon>
+                    </li>
+                    <li>
+                        <p>lait2126@gmail.com</p>
+                        <ion-icon name="mail"></ion-icon>
+                    </li>
+                    <li>
+                        <p>Vientiane-lao</p>
+                        <ion-icon name="location"></ion-icon>
+                    </li>
+                </ul>
+                <div class="social">
+                    <div class="box"> <a href="https://m.me/j/AbaxdvO-aNJit5V4/" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a> </div>
+                    <div class="box"> <a href="https://chat.whatsapp.com/L0sPJR0dadv8K3OeBqRNeP" target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a> </div>
+                    <div class="box"> <a href="https://www.instagram.com" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a> </div>
+                    <div class="box"> <a href="https://github.com/laitung1122" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     </main>
     <footer class="footer" id="footer">
         <div class="footer_main">
-            <div class="logo">
-                <img src="app/images/logo/logo.svg" alt="Webook logo">
-                <p>Get industry accredited certification and advance through our high-quality online courses.</p>
+            <!-- Logo Section -->
+            <div class="logo"> <img src="app/images/logo/logo.svg" alt="Webook logo">
+                <p data-i18n="footer_description"> Get industry accredited certification and advance through our high-quality online courses. </p>
             </div>
+        </div>
         <div class="copyright">
-            <h1>2022 <span>©</span> Copyright <span>Webook</span> And Design By <a href="https://github.com/laitung1122">Duong Su😃</a>
-            </h1>
+            <h1>2022 <span>©</span> Copyright <span>Webook</span> And Design By <a href="https://github.com/laitung1122">Duong Su😃</a> </h1>
         </div>
     </footer>
     <script src="app/js/script.js" defer></script>
