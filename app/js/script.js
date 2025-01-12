@@ -316,7 +316,7 @@ function setLanguage(lang) {
 
 // Khi trang tải lại, áp dụng ngôn ngữ đã lưu
 document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("language") || "vi"; // Mặc định là tiếng Việt
+    const savedLang = localStorage.getItem("language") || "la"; // Mặc định là tiếng Việt
     applyLanguage(savedLang);
 
     const langToggle = document.getElementById("lang-selector-toggle");
