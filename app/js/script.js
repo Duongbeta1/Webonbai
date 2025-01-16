@@ -38,14 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const handleScroll = () => {
         fadeInElements.forEach((el) => {
             const rect = el.getBoundingClientRect();
-            const triggerHeight = window.innerHeight * 4 / 5;
+            const triggerHeight = window.innerHeight * 6 / 7;
             if (rect.top < triggerHeight) {
                 el.classList.add("visible");
             }
         });
         fadeIn2Elements.forEach((el) => {
             const rect = el.getBoundingClientRect();
-            const triggerHeight = window.innerHeight * 4 / 5;
+            const triggerHeight = window.innerHeight * 6 / 7;
             if (rect.top < triggerHeight) {
                 el.classList.add("visible");
             }
@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
     const preloader = document.getElementById("preloader");
     window.addEventListener("load", () => {
-        const loadingTime = 2000;
+        const loadingTime = 1000;
         setTimeout(() => {
             preloader.style.opacity = "0";
             setTimeout(() => {
                 preloader.style.display = "none";
-            }, 3000);
+            }, 1000);
             document.body.classList.remove("hidden-content");
             document.body.classList.add("loaded-content");
         }, loadingTime);
@@ -70,58 +70,77 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("hidden-content");
 });
 let copyAttemptCount = 0;
-    const blockedUntil = localStorage.getItem('blockedUntil');
-    if (blockedUntil && Date.now() < blockedUntil) {
-      alert('Bạn đã bị chặn truy cập. Vui lòng quay lại sau!');
-      blockAccess();
-    }
-    document.addEventListener('copy', function(e) {
-      copyAttemptCount++;
-      e.preventDefault();
-      if (copyAttemptCount >= 3) {
-        alert('Bạn đã cố gắng sao chép quá nhiều lần. Bạn sẽ bị chặn truy cập trong 2 phút!');
-        blockAccess();
-        setBlockTimeout();
-      } else {
-        alert(`Sao chép bị vô hiệu hóa! Bạn đã cố gắng sao chép ${copyAttemptCount} lần.`);
-      }
-    });
-    document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-    });
-    document.addEventListener('dragstart', function(e) {
-      e.preventDefault();
-    });
-    document.addEventListener('keydown', function(e) {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
-        copyAttemptCount++;
-        e.preventDefault();
-        if (copyAttemptCount >= 3) {
-          alert('Bạn đã cố gắng sao chép quá nhiều lần. Bạn sẽ bị chặn truy cập trong 5 phút!');
-          blockAccess();
-          setBlockTimeout();
-        } else {
-          alert(`Sao chép bị vô hiệu hóa! Bạn đã cố gắng sao chép ${copyAttemptCount} lần(tối đa 3 lần).`);
-        }
-      }
-    });
-    document.addEventListener('selectstart', function(e) {
-      e.preventDefault();
-    });
-    function blockAccess() {
-      window.location.href = 'https://youtu.be/dQw4w9WgXcQ?si=cd8iLfqJMjUit6TK';
-    }
+let isCopyAllowed = false;
 
-    function setBlockTimeout() {
-      const blockDuration = 1 * 60 * 1000;
-      const unblockTime = Date.now() + blockDuration;
-      localStorage.setItem('blockedUntil', unblockTime);
+document.addEventListener('copy', function(e) {
+  handleCopyAttempt(e);
+});
 
-      setTimeout(() => {
-        localStorage.removeItem('blockedUntil');
-        alert('Bạn đã được mở khóa. Vui lòng tải lại trang!');
-      }, blockDuration);
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+document.addEventListener('dragstart', function(e) {
+  e.preventDefault();
+});
+
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+    handleCopyAttempt(e);
+  }
+});
+
+document.addEventListener('selectstart', function(e) {
+  if (!isCopyAllowed) {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchend', handleTouchEnd, false);
+
+let touchStartTime = 0;
+
+function handleTouchStart(e) {
+  touchStartTime = Date.now();
+}
+
+function handleTouchEnd(e) {
+  const touchDuration = Date.now() - touchStartTime;
+  if (touchDuration >= 2000) {
+    handleLongPress(e);
+  }
+}
+
+function handleCopyAttempt(e) {
+  if (!isCopyAllowed) {
+    copyAttemptCount++;
+    e.preventDefault();
+    if (copyAttemptCount >= 3) {
+      alert('Bạn đã cố gắng nhập sai quá nhiều lần. vui lòng khởi động lại web');
+    } else {
+      promptForKey();
     }
+  }
+}
+
+function handleLongPress(e) {
+  if (!isCopyAllowed) {
+    e.preventDefault();
+    promptForKey();
+  }
+}
+
+function promptForKey() {
+  const key = prompt('Bạn muốn copy? Hãy nhập key vào đây:');
+  if (key === 'HnfwafbaJhiufauIInBUOBDQabfaWQDNJQBWF') {
+    alert('Key chính xác! Bạn có thể sao chép nội dung.');
+    isCopyAllowed = true;
+  } else {
+    alert('Key không chính xác. Sao chép bị từ chối.');
+  }
+}
+
 const languages = {
     en: {
         home: "Home",
@@ -147,10 +166,14 @@ const languages = {
         //card1 card2
         card1_title: "Lao lesson",
         card2_title: "Biology lesson",
-        card1_status: "50+ Questions",
+        card1_status: "15+ Questions",
         card2_status: "80+ Questions",
-        card1_duration: "Will update soon",
+        card1_duration: "Updated 🌟",
         card2_duration: "Will update soon",
+        //card3
+        card3_title: "Literature",
+        card3_status: "20+ questions",
+        card3_duration: "Updated 🌟",
         learn_more: "Start learn",
         view_all: "Start learn",
         //info
@@ -209,14 +232,18 @@ const languages = {
         why_choose_us: "Tại sao<br />chọn<br />chúng tôi",
         //card1
         card1_title: "Môn tiếng lào",
-        card1_status: "50+ câu hỏi",
-        card1_duration: "Sẽ cập nhật thêm sắp tới",
+        card1_status: "15+ câu hỏi",
+        card1_duration: "Đã cập nhật 🌟",
         //card2
         card2_title: "Môn Sinh học",
         card2_status: "80+ câu hỏi",
         card2_duration: "Sẽ cập nhật thêm sắp tới",
         learn_more: "Bắt đầu học",
         view_all: "Bắt đầu học",
+        //card3
+        card3_title: "Môn văn học nghệ thuật",
+        card3_status: "20+ câu hỏi",
+        card3_duration: "Đã cập nhật 🌟",
         //info
         popular_courses_title: "📝Câu hỏi ôn thi",
         courses_heading: "Môn học",
@@ -274,14 +301,18 @@ const languages = {
         why_choose_us: "Why<br/>Choose<br/>Us?",
         //card1
         card1_title: "ວິຊາພາສາລາວ",
-        card1_status: "50+ ຄຳຖາມ",
-        card1_duration: "ຈະອັບເດດຕື່ມໃນອານາຄົດ",
+        card1_status: "15+ ຄຳຖາມ",
+        card1_duration: "ອັບເດດແລ້ວ 🌟",
         //card2
         card2_title: "ວິຊາຊີວະ",
         card2_status: "80+ ຄຳຖາມ",
         card2_duration: "ຈະອັບເດດຕື່ມໃນອານາຄົດ",
         learn_more: "ເລີ່ມຮຽນ",
         view_all: "ເລີ່ມຮຽນ",
+        //card3
+        card3_title: "ວິຊາວັນນະຄະດີ",
+        card3_status: "20+ ຄຳຖາມ",
+        card3_duration: "ອັບເດດແລ້ວ 🌟",
         //info
         popular_courses_title: "ຄຳຖາມທວນເສັງ",
         courses_heading: "ວິຊາຮຽນ",
@@ -383,7 +414,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Đợi 1 giây và ẩn preloader
                 setTimeout(() => {
                     preloader.classList.remove("active");
-                }, 1000); // 1000 ms = 1 giây
+                }, 500); // 1000 ms = 1 giây
 
                 // Đóng menu sau khi chọn ngôn ngữ
                 langMenu.style.maxHeight = "0";
