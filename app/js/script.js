@@ -201,6 +201,7 @@ const languages = {
         faqlao: "Lao questions are from lessons 1 to 12",
         faq: "FAQ❓",
         faqsinh: "Biology questions from Lesson 1 to Lesson 13",
+        faqvanna: "Literature from lesson 1 to lesson 8",
         //question
         q1:"Is all the information on this website 100% accurate 🤔?",
         ans1: "The information on this website may not be 100% accurate, if you see anything wrong you can post the details in the group or contact us!",
@@ -269,6 +270,7 @@ const languages = {
         footer_description: "Nhận chứng chỉ được công nhận và nâng cao qua các khóa học trực tuyến chất lượng cao của chúng tôi.",
         faqlao: "Câu hỏi môn tiếng lào có từ bài 1 đến 12",
         faqsinh: "Câu hỏi môn sinh học có từ bài 1 đến 13",
+        faqvanna: "Môn văn học nghệ thuật có từ bài 1 đến 8",
         //question
         q1:"Tất cả thông tin trên trang này có chính xác 100% không 🤔?",
         ans1: "Thông tin trên trang này có thể không chính xác 100%, nếu thấy sai sót bạn có thể đăng thông tin chi tiết trong nhóm hoặc liên hệ với chúng tôi!",
@@ -338,6 +340,7 @@ const languages = {
         faq: "ຄຳຖາມທີ່ພົບເຫັນໄດ້ບ່ອຍ❓",
         faqlao: "ຄໍາຖາມທວນວິຊາພາສາລາວມີເເຕ່ບົດທີ 1 ຫາ 12",
         faqsinh: "ຄຳຖາມທວນຄືນວິຊາຊີວະເເຕ່ບົດທີ1 ຫາ 13",
+        faqvanna: "ວິຊາວັນນະຄະດີເເຕ່ບົດທີ1 ຫາ 8",
         //question
         q1:"ທຸກໆຂໍ້ມູນຢູ່ໃນເວບໄຊນີ້ມັນຖືກຕ້ອງ 100% ບໍ່ 🤔?",
         ans1: "ຂໍ້ມູນຢູ່ໃນເວບໄຊນີ້ມັນອາດຈະບໍ່ຖືກຕ້ອງ 100%, ຖ້າວ່າເຫັນຜິດຢູ່ບ່ອນໃດເຈົ້າສາມາດລົງລາຍລະອຽດຢູ່ໃນກຸ່ມຫຼືທັກຫາພວກຂ້ອຍ!",
