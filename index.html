@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang học online</title> <!-- Favicon -->
-    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon"> <!-- fonts link  -->
+    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon"> <!-- Link favicon -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet"> <!-- css  -->
-    <link rel="stylesheet" href="app/scss/style.css"> <!-- icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="app/scss/style.css">
+    <!-- Ionicons (icon library) -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-
 <body>
-    <div id="preloader"> <img src="app/images/preloader.gif"> </div>
+    <!-- Preloader: hình ảnh loading hiển thị trước khi trang sẵn sàng -->
+    <div id="preloader">
+        <img src="app/images/preloader.gif" loading="lazy" alt="Preloader GIF">
     </div>
+    <!-- Header: logo và menu điều hướng -->
     <header class="header" id="header">
-        <div class="logo"> <img src="app/images/logo/logo.svg" alt="Logo"> </div>
+        <div class="logo">
+            <img src="app/images/logo/logo.svg" alt="Logo" loading="lazy">
+        </div>
         <div class="menu-hamburger" id="toggle">
-            <!-- Phần menu hamburger nếu cần -->
+            <!-- Nút menu hamburger (hiện trên di động) -->
         </div>
         <nav class="navbar" id="navbar">
             <ul class="navbar-list" id="primary-navbar" data-visiable="false">
-                <div class="language-dropdown"> <button id="lang-selector-toggle" class="lang-toggle"> <span id="language_name">🌐lang</span> <!-- Tên ngôn ngữ sẽ hiển thị ở đây -->
+                <!-- Dropdown chọn ngôn ngữ -->
+                <div class="language-dropdown">
+                    <button id="lang-selector-toggle" class="lang-toggle">
+                        <span id="language_name">🌐lang</span> <!-- Tên ngôn ngữ hiện tại -->
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </button>
                     <ul id="lang-options-menu" class="lang-menu">
@@ -38,36 +47,49 @@
                 <li><a href="#features" class="navbar-links" data-i18n="features">Features</a></li>
                 <li><a href="#expert" class="navbar-links" data-i18n="about">About</a></li>
                 <li><a href="#contact" class="navbar-links" data-i18n="contact">Contact</a></li>
-                <li><a href="https://m.me/j/AbaxdvO-aNJit5V4/" class="btn btn-get-courses" data-i18n="get_courses"><span>Get Courses</span></a></li>
+                <li>
+                    <a href="https://m.me/j/AbaxdvO-aNJit5V4/" class="btn btn-get-courses" data-i18n="get_courses">
+                        <span>Get Courses</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- --------------------------------
-        banner section 
-    -------------------------------- -->
+        <!-- Banner section: phần giới thiệu chính (hero) với tiêu đề và hình ảnh -->
         <section class="banner column-4" id="banner">
             <div class="text-area">
                 <div class="text-part">
                     <h1 data-i18n="training_title">Huấn luyện <span>kỹ năng</span> để phát triển</h1>
                     <p data-i18n="banner_text">Nhận chứng chỉ được công nhận trong ngành và tiến xa hơn</p>
                 </div>
-                <div class="button-group"> <a href="#courses" class="btn btn-start-course" data-i18n="start_course_btn">Bắt đầu một khóa học</a> </div>
+                <div class="button-group">
+                    <a href="#courses" class="btn btn-start-course" data-i18n="start_course_btn">Bắt đầu một khóa học</a>
+                </div>
             </div>
-            <div class="image-area"> <img src="app/images/causal.png" alt="">
-                <div class="circle"></div> <a href="#features" class="info info-expert" data-i18n="expert_title1">
+            <div class="image-area">
+                <!-- Hình ảnh minh họa banner -->
+                <img src="app/images/causal.png" alt="Banner Image" loading="lazy">
+                <div class="circle"></div>
+                <!-- Các nhãn thông tin trên banner -->
+                <a href="#features" class="info info-expert" data-i18n="expert_title1">
                     <ion-icon name="people-circle-outline"></ion-icon><span>Chuyên gia chuyên nghiệp</span>
-                </a> <a href="#features" class="info info-live" data-i18n="live_class_title">
+                </a>
+                <a href="#features" class="info info-live" data-i18n="live_class_title">
                     <ion-icon name="videocam-outline"></ion-icon><span>Lớp học trực tiếp</span>
-                </a> <a href="#features" class="info info-chat" data-i18n="chat_class_title">
+                </a>
+                <a href="#features" class="info info-chat" data-i18n="chat_class_title">
                     <ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Lớp giải đáp thắc mắc</span>
                 </a>
             </div>
         </section>
+        <!-- Features section: giới thiệu các lợi ích/tính năng khoá học -->
         <section class="features fade-in" id="features">
-            <div class="custom-shape-divider-bottom fade-in"> <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <div class="custom-shape-divider-bottom fade-in">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg> </div>
+                </svg>
+            </div>
             <div class="main-container column-2 fade-in">
                 <div class="text-part fade-in">
                     <h1 data-i18n="feature_video_title">Video, âm thanh, lớp học trực tiếp và khóa học chất lượng cao.</h1>
@@ -98,357 +120,391 @@
                 </div>
             </div>
         </section>
-    </main>
-    <section id="courses" class="courses">
-        <div class="text-part fade-in">
-            <h1 data-i18n="popular_courses_title">Our lesson</h1>
-            <div class="overlay-text">
-                <h2 data-i18n="courses_heading">COURSES</h2>
+        <!-- Courses section: danh sách các bài học (LESSONS) -->
+        <section id="courses" class="courses">
+            <div class="text-part fade-in">
+                <h1 data-i18n="popular_courses_title">Our lesson</h1>
+                <div class="overlay-text">
+                    <h2 data-i18n="courses_heading">COURSES</h2>
+                </div>
+                <hr class="line fade-in">
             </div>
-            <hr class="line fade-in">
-        </div>
-        <div class="main-container">
-            <!-- card 1 -->
-            <div class="card card1 fade-in2">
-                <div class="card_image"> <img src="./lesson/tienglao.png" alt="Software Development"> </div>
-                <div class="card_info">
-                    <!--<div class="card_info_rating">
-                <div class="rating_box">
-                    <ion-icon name="star"></ion-icon>
-                    <span>4.4</span>
-                </div>
-                <div class="rating_text">
-                    <p>1k Rating</p>
-                </div>
-            </div>-->
-                    <div class="card_info_text"> <a href="tienglao.html" data-i18n="card1_title">Example1</a> </div>
-                    <div class="card_info_status fade-in">
-                        <div class="info fade-in">
-                            <ion-icon name="play-circle"></ion-icon>
-                            <p data-i18n="card1_status">Live Class</p>
-                        </div>
-                        <div class="info fade-in">
-                            <ion-icon name="time"></ion-icon>
-                            <p data-i18n="card1_duration">32 Hour</p>
-                        </div>
+            <div class="main-container">
+                <!-- Thẻ khóa học 1 -->
+                <div class="card card1 fade-in2">
+                    <div class="card_image">
+                        <img src="./lesson/tienglao.png" alt="Software Development" loading="lazy">
                     </div>
-                    <div class="card_info_price f"> <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='tienglao.html'"> start learn </button> </div>
-                </div>
-            </div>
-
-            <div class="card card2 fade-in2">
-                <div class="card_image"> <img src="./lesson/vanna.png" alt="Software Development"> </div>
-                <div class="card_info">
-                    <div class="card_info_text"> <a href="vanna.html" data-i18n="card3_title">Example1</a> </div>
-                    <div class="card_info_status fade-in">
-                        <div class="info fade-in">
-                            <ion-icon name="play-circle"></ion-icon>
-                            <p data-i18n="card3_status">Live Class</p>
+                    <div class="card_info">
+                        <!-- <div class="card_info_rating"> ... đánh giá xếp hạng ... </div> -->
+                        <div class="card_info_text">
+                            <a href="tienglao.html" data-i18n="card1_title">Example1</a>
                         </div>
-                        <div class="info fade-in">
-                            <ion-icon name="time"></ion-icon>
-                            <p data-i18n="card3_duration">32 Hour</p>
+                        <div class="card_info_status fade-in">
+                            <div class="info fade-in">
+                                <ion-icon name="play-circle"></ion-icon>
+                                <p data-i18n="card1_status">Live Class</p>
+                            </div>
+                            <div class="info fade-in">
+                                <ion-icon name="time"></ion-icon>
+                                <p data-i18n="card1_duration">32 Hour</p>
+                            </div>
+                        </div>
+                        <div class="card_info_price f">
+                            <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='tienglao.html'"> start learn </button>
                         </div>
                     </div>
-                    <div class="card_info_price f"> <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='vanna.html'"> start learn </button> </div>
                 </div>
-            </div>
-
-            <div class="card card3 fade-in2">
-                <div class="card_image"> <img src="./lesson/siva.png" alt="Software Development"> </div>
-                <div class="card_info">
-                    <div class="card_info_text"> <a href="siva.html" data-i18n="card2_title">Example1</a> </div>
-                    <div class="card_info_status fade-in">
-                        <div class="info fade-in">
-                            <ion-icon name="play-circle"></ion-icon>
-                            <p data-i18n="card2_status">Live Class</p>
+                <!-- Thẻ khóa học 2 -->
+                <div class="card card2 fade-in2">
+                    <div class="card_image">
+                        <img src="./lesson/vanna.png" alt="Software Development" loading="lazy">
+                    </div>
+                    <div class="card_info">
+                        <div class="card_info_text">
+                            <a href="vanna.html" data-i18n="card3_title">Example1</a>
                         </div>
-                        <div class="info fade-in">
-                            <ion-icon name="time"></ion-icon>
-                            <p data-i18n="card2_duration">32 Hour</p>
+                        <div class="card_info_status fade-in">
+                            <div class="info fade-in">
+                                <ion-icon name="play-circle"></ion-icon>
+                                <p data-i18n="card3_status">Live Class</p>
+                            </div>
+                            <div class="info fade-in">
+                                <ion-icon name="time"></ion-icon>
+                                <p data-i18n="card3_duration">32 Hour</p>
+                            </div>
+                        </div>
+                        <div class="card_info_price f">
+                            <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='vanna.html'"> start learn </button>
                         </div>
                     </div>
-                    <div class="card_info_price f"> <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='siva.html'"> start learn </button> </div>
                 </div>
-            </div>
-        </div>
-        <!--<div class="lowerpart fade-in2">
-    <button class="btn btn-viewall">
-        View All
-    </button>
-</div> -->
-    </section> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="var(--secondarycolor)" fill-opacity="1" d="M0,192L1440,288L1440,0L0,0Z"></path>
-    </svg> <!-- -------------------------------- -->
-    <!-- expert section  -->
-    <!-- -------------------------------- -->
-    <section id="expert" class="expert fade-in">
-        <div class="circle blur-neon expert_circle fade-in"></div>
-        <div class="expert_text fade-in" id="expert-text">
-            <h1 data-i18n="expert_title">Đây là thành viên của chúng tôi</h1>
-        </div>
-        <div class="expert_main">
-            <!-- card-1 -->
-            <div class="card card-1 fade-in">
-                <div class="card_image fade-in">
-                    <div class="overlay-gradient"></div> <img src="duong.png" alt="Duong">
-                </div>
-                <div class="card_name fade-in">
-                    <h1>Dương</h1>
-                </div>
-                <div class="card_job fade-in">
-                    <p>Software Developer</p>
-                </div>
-                <div class="card_social fade-in"> <a href="https://www.facebook.com/profile.php?id=100070575127940&mibextid=ZbWKwL" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a> <a href="https://github.com/laitung1122" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a> <a href="https://wa.me/qr/VGBFV36LHKILH1" target="_blank">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a> </div>
-            </div> <!-- card-2 -->
-            <div class="card card-2 fade-in">
-                <div class="card_image fade-in">
-                    <div class="overlay-gradient"></div> <img src="vixay.png" alt="Julian Wan">
-                </div>
-                <div class="card_name fade-in">
-                    <h1>Vixay</h1>
-                </div>
-                <div class="card_job fade-in">
-                    <p>Editor</p>
-                </div>
-                <div class="card_social fade-in"> <a href="https://www.facebook.com/guyz.regendszy?mibextid=ZbWKwL" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a> <a href="https://wa.me/qr/NGWZBYBLPLQFG1" target="_blank">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a> </div>
-            </div> <!-- card-3 -->
-            <div class="card card-3 fade-in">
-                <div class="card_image fade-in">
-                    <div class="overlay-gradient"></div> <img src="suoksavat.png" alt="SOUK">
-                </div>
-                <div class="card_name fade-in">
-                    <h1>Soucksavath</h1>
-                </div>
-                <div class="card_job fade-in">
-                    <p>Supporter and Fix letter</p>
-                </div>
-                <div class="card_social fade-in"> <a href="https://m.facebook.com/100042690402647" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a> <a href="https://wa.me/qr/BEVAJ3Q3MUVHB1" target="_blank">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a> </div>
-            </div>
-            <div class="card card-4 fade-in">
-                <div class="card_image fade-in">
-                    <div class="overlay-gradient"></div> <img src="quan.png" alt="SOUK">
-                </div>
-                <div class="card_name fade-in">
-                    <h1>Quân(ZETTY)</h1>
-                </div>
-                <div class="card_job fade-in">
-                    <p>Supporter</p>
-                </div>
-                <div class="card_social fade-in"> <a href="https://www.facebook.com/axaki.hima.1?mibextid=ZbWKwL" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a> <a href="https://wa.me/qr/DOI6PACFKQAEL1" target="_blank">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a> </div>
-            </div>
-        </div>
-    </section> <!-- -------------------------------- -->
-    <!-- about section  -->
-    <!-- -------------------------------- -->
-    <section class="about" id="about">
-        <div class="about_content">
-            <div class="text">
-                <h2 data-i18n="more_about_us">More About Us</h2>
-                <p data-i18n="about_description">Webook is an online course website that prioritizes practice over theory, with thousands of certified mentors and tens of thousands of students we can produce thousands of graduates who are immediately ready for a professional career.</p>
-                <h1 data-i18n="about">About</h1>
-            </div>
-            <div class="image"> <img src="team.png" alt=""> </div>
-        </div>
-        <div class="about_stats">
-            <div class="card card-1 fade-in">
-                <h1>100+</h1>
-                <p data-i18n="students">Students</p>
-            </div>
-            <div class="card card-1 fade-in">
-                <h1>4</h1>
-                <p data-i18n="experts">Experts</p>
-            </div>
-            <div class="card card-1 fade-in">
-                <h1>5</h1>
-                <p data-i18n="courses">Courses</p>
-            </div>
-            <div class="card card-1 fade-in">
-                <h1>3</h1>
-                <p data-i18n="countries">Countries</p>
-            </div>
-        </div>
-    </section> <!-- -------------------------------- -->
-    <!-- feedback -->
-    <!-- -------------------------------- -->
-    <section class="faq" id="faq">
-        <div class="faq_text">
-            <h1 data-i18n="faq">FAQ</h1>
-            <hr class="line">
-        </div>
-        <div class="faq_main">
-            <div class="accordian">
-                <div class="accordian_item fade-in2">
-                    <a href="#q1" class="link">
-                        <p data-i18n="q1">q1</p>
-                        <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                        <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                    </a>
-                    <div class="answer">
-                        <p data-i18n="ans1">ans1</p>
+                <!-- Thẻ khóa học 3 -->
+                <div class="card card3 fade-in2">
+                    <div class="card_image">
+                        <img src="./lesson/siva.png" alt="Software Development" loading="lazy">
                     </div>
-                </div>
-                <div class="accordian_item fade-in2">
-                    <a href="#q1" class="link">
-                        <p data-i18n="q2">q2</p>
-                        <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                        <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                    </a>
-                    <div class="answer">
-                        <p data-i18n="ans2">ans2</p>
-                    </div>
-                </div>
-                <div class="accordian_item fade-in2">
-                    <a href="#q1" class="link">
-                        <p data-i18n="q3">q3</p>
-                        <ion-icon class="down" name="caret-down-outline"></ion-icon>
-                        <ion-icon class="up" name="caret-up-outline"></ion-icon>
-                    </a>
-                    <div class="answer">
-                        <p data-i18n="ans3">ans3</p>
+                    <div class="card_info">
+                        <div class="card_info_text">
+                            <a href="siva.html" data-i18n="card2_title">Example1</a>
+                        </div>
+                        <div class="card_info_status fade-in">
+                            <div class="info fade-in">
+                                <ion-icon name="play-circle"></ion-icon>
+                                <p data-i18n="card2_status">Live Class</p>
+                            </div>
+                            <div class="info fade-in">
+                                <ion-icon name="time"></ion-icon>
+                                <p data-i18n="card2_duration">32 Hour</p>
+                            </div>
+                        </div>
+                        <div class="card_info_price f">
+                            <button class="btn btn-learnmore fade-in" data-i18n="learn_more" onclick="window.location.href='siva.html'"> start learn </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> <!-- -------------------------------- -->
-    <!-- contact -->
-    <!-- -------------------------------- -->
-    <section class="contact fade-in" id="contact">
-        <div class="contact_text">
-            <h1 data-i18n="contact_title">Contact</h1>
-        </div>
-        <div class="contact_main">
-            <!-- Input Form -->
-            <div class="input">
-                <form id="contactForm">
-                    <div class="name">
-                        <label for="username" data-i18n="name_label">Name</label>
-                        <input type="text" id="username" name="username" placeholder="Dương" required>
-                    </div>
-                    <div class="email">
-                        <label for="useremail" data-i18n="email_label">Email</label>
-                        <input type="email" id="useremail" name="useremail" placeholder="laitung94750@gmail.com" required>
-                    </div>
-                    <div class="textarea">
-                        <label for="usertext" data-i18n="message_label">Message</label>
-                        <textarea id="usertext" name="message" cols="30" rows="10" placeholder="Write your message..." required></textarea>
-                    </div>
-                    <div class="submit">
-                        <button class="button-86" type="submit" data-i18n="send_button">Send</button>
-                    </div>
-                    <div id="statusMessage"></div>
-                </form>
+            <!-- <div class="lowerpart fade-in2">
+                <button class="btn btn-viewall">View All</button>
+            </div> -->
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="var(--secondarycolor)" fill-opacity="1" d="M0,192L1440,288L1440,0L0,0Z"></path>
+        </svg>
+        <!-- Expert section: thông tin về các thành viên nhóm (đội ngũ) -->
+        <section id="expert" class="expert fade-in">
+            <div class="circle blur-neon expert_circle fade-in"></div>
+            <div class="expert_text fade-in" id="expert-text">
+                <h1 data-i18n="expert_title">Đây là thành viên của chúng tôi</h1>
             </div>
-             <!-- Details Section -->
-            <div class="details">
-                <div class="details_text">
-                    <h1 data-i18n="get_in_touch">Get In Touch</h1>
-                    <p data-i18n="details_description">20 students daily learn with e-learning. Subscribe for new updates.</p>
-                </div>
-                <ul>
-                    <li>
-                        <p>+85602093496192</p>
-                        <ion-icon name="call"></ion-icon>
-                    </li>
-                    <li>
-                        <p>lait2126@gmail.com</p>
-                        <ion-icon name="mail"></ion-icon>
-                    </li>
-                    <li>
-                        <p>Vientiane-lao</p>
-                        <ion-icon name="location"></ion-icon>
-                    </li>
-                </ul>
-                <div class="social">
-                    <div class="box"> <a href="https://m.me/j/AbaxdvO-aNJit5V4/" target="_blank">
+            <div class="expert_main">
+                <!-- Thẻ thành viên 1 -->
+                <div class="card card-1 fade-in">
+                    <div class="card_image fade-in">
+                        <div class="overlay-gradient"></div>
+                        <!-- Ảnh thành viên 1 -->
+                        <img src="duong.png" alt="Duong" loading="lazy">
+                    </div>
+                    <div class="card_name fade-in">
+                        <h1>Dương</h1>
+                    </div>
+                    <div class="card_job fade-in">
+                        <p>Software Developer</p>
+                    </div>
+                    <div class="card_social fade-in">
+                        <a href="https://www.facebook.com/profile.php?id=100070575127940" target="_blank">
                             <ion-icon name="logo-facebook"></ion-icon>
-                        </a> </div>
-                    <div class="box"> <a href="https://chat.whatsapp.com/L0sPJR0dadv8K3OeBqRNeP" target="_blank">
-                            <ion-icon name="logo-whatsapp"></ion-icon>
-                        </a> </div>
-                    <div class="box"> <a href="https://www.instagram.com" target="_blank">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a> </div>
-                    <div class="box"> <a href="https://github.com/laitung1122" target="_blank">
+                        </a>
+                        <a href="https://github.com/laitung1122" target="_blank">
                             <ion-icon name="logo-github"></ion-icon>
-                        </a> </div>
+                        </a>
+                        <a href="https://wa.me/qr/VGBFV36LHKILH1" target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thẻ thành viên 2 -->
+                <div class="card card-2 fade-in">
+                    <div class="card_image fade-in">
+                        <div class="overlay-gradient"></div>
+                        <img src="vixay.png" alt="Vixay" loading="lazy">
+                    </div>
+                    <div class="card_name fade-in">
+                        <h1>Vixay</h1>
+                    </div>
+                    <div class="card_job fade-in">
+                        <p>Editor</p>
+                    </div>
+                    <div class="card_social fade-in">
+                        <a href="https://www.facebook.com/guyz.regendszy" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://wa.me/qr/NGWZBYBLPLQFG1" target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thẻ thành viên 3 -->
+                <div class="card card-3 fade-in">
+                    <div class="card_image fade-in">
+                        <div class="overlay-gradient"></div>
+                        <img src="suoksavat.png" alt="Soucksavath" loading="lazy">
+                    </div>
+                    <div class="card_name fade-in">
+                        <h1>Soucksavath</h1>
+                    </div>
+                    <div class="card_job fade-in">
+                        <p>Supporter and Fix letter</p>
+                    </div>
+                    <div class="card_social fade-in">
+                        <a href="https://m.facebook.com/100042690402647" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://wa.me/qr/BEVAJ3Q3MUVHB1" target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thẻ thành viên 4 -->
+                <div class="card card-4 fade-in">
+                    <div class="card_image fade-in">
+                        <div class="overlay-gradient"></div>
+                        <img src="quan.png" alt="Quân (ZETTY)" loading="lazy">
+                    </div>
+                    <div class="card_name fade-in">
+                        <h1>Quân (ZETTY)</h1>
+                    </div>
+                    <div class="card_job fade-in">
+                        <p>Supporter</p>
+                    </div>
+                    <div class="card_social fade-in">
+                        <a href="https://www.facebook.com/axaki.hima.1" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://wa.me/qr/DOI6PACFKQAEL1" target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-    </section>
+        </section>
+        <!-- About section: thông tin giới thiệu về Webook và thống kê -->
+        <section class="about" id="about">
+            <div class="about_content">
+                <div class="text">
+                    <h2 data-i18n="more_about_us">More About Us</h2>
+                    <p data-i18n="about_description">Webook is an online course website that prioritizes practice over theory, with thousands of certified mentors and tens of thousands of students we can produce thousands of graduates who are immediately ready for a professional career.</p>
+                    <h1 data-i18n="about">About</h1>
+                </div>
+                <div class="image">
+                    <img src="team.png" alt="Team photo" loading="lazy">
+                </div>
+            </div>
+            <div class="about_stats">
+                <div class="card card-1 fade-in">
+                    <h1>100+</h1>
+                    <p data-i18n="students">Students</p>
+                </div>
+                <div class="card card-1 fade-in">
+                    <h1>4</h1>
+                    <p data-i18n="experts">Experts</p>
+                </div>
+                <div class="card card-1 fade-in">
+                    <h1>5</h1>
+                    <p data-i18n="courses">Courses</p>
+                </div>
+                <div class="card card-1 fade-in">
+                    <h1>3</h1>
+                    <p data-i18n="countries">Countries</p>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section: các câu hỏi thường gặp -->
+        <section class="faq" id="faq">
+            <div class="faq_text">
+                <h1 data-i18n="faq">FAQ</h1>
+                <hr class="line">
+            </div>
+            <div class="faq_main">
+                <div class="accordian">
+                    <div class="accordian_item fade-in2">
+                        <a href="#q1" class="link">
+                            <p data-i18n="q1">q1</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p data-i18n="ans1">ans1</p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2">
+                        <a href="#q1" class="link">
+                            <p data-i18n="q2">q2</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p data-i18n="ans2">ans2</p>
+                        </div>
+                    </div>
+                    <div class="accordian_item fade-in2">
+                        <a href="#q1" class="link">
+                            <p data-i18n="q3">q3</p>
+                            <ion-icon class="down" name="caret-down-outline"></ion-icon>
+                            <ion-icon class="up" name="caret-up-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            <p data-i18n="ans3">ans3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section: biểu mẫu liên hệ và thông tin liên lạc -->
+        <section class="contact fade-in" id="contact">
+            <div class="contact_text">
+                <h1 data-i18n="contact_title">Contact</h1>
+            </div>
+            <div class="contact_main">
+                <!-- Form liên hệ (nhập tên, email, tin nhắn) -->
+                <div class="input">
+                    <form id="contactForm">
+                        <div class="name">
+                            <label for="username" data-i18n="name_label">Name</label>
+                            <input type="text" id="username" name="username" placeholder="Dương" required>
+                        </div>
+                        <div class="email">
+                            <label for="useremail" data-i18n="email_label">Email</label>
+                            <input type="email" id="useremail" name="useremail" placeholder="laitung94750@gmail.com" required>
+                        </div>
+                        <div class="textarea">
+                            <label for="usertext" data-i18n="message_label">Message</label>
+                            <textarea id="usertext" name="message" cols="30" rows="10" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <div class="submit">
+                            <button class="button-86" type="submit" data-i18n="send_button">Send</button>
+                        </div>
+                        <div id="statusMessage"></div>
+                    </form>
+                </div>
+                <!-- Thông tin liên hệ chi tiết -->
+                <div class="details">
+                    <div class="details_text">
+                        <h1 data-i18n="get_in_touch">Get In Touch</h1>
+                        <p data-i18n="details_description">20 students daily learn with e-learning. Subscribe for new updates.</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>+85602093496192</p>
+                            <ion-icon name="call"></ion-icon>
+                        </li>
+                        <li>
+                            <p>lait2126@gmail.com</p>
+                            <ion-icon name="mail"></ion-icon>
+                        </li>
+                        <li>
+                            <p>Vientiane-lao</p>
+                            <ion-icon name="location"></ion-icon>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <div class="box">
+                            <a href="https://m.me/j/AbaxdvO-aNJit5V4/" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="https://chat.whatsapp.com/L0sPJR0dadv8K3OeBqRNeP" target="_blank">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="https://github.com/laitung1122" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer" id="footer">
         <div class="footer_main">
-            <!-- Logo Section -->
-            <div class="logo"> <img src="app/images/logo/logo.svg" alt="Webook logo">
+            <!-- Logo và mô tả ở footer -->
+            <div class="logo">
+                <img src="app/images/logo/logo.svg" alt="Webook logo" loading="lazy">
                 <p data-i18n="footer_description"> Get industry accredited certification and advance through our high-quality online courses. </p>
             </div>
         </div>
         <div class="copyright">
-            <h1>2025 <span>©</span> Copyright <span>Webook</span> And Design By <a href="https://github.com/laitung1122">Duong Su😃</a> </h1>
+            <h1>2025 <span>©</span> Copyright <span>Webook</span> And Design By 
+                <a href="https://github.com/laitung1122">Duong Su😃</a>
+            </h1>
         </div>
     </footer>
+    <!-- Liên kết file JS và thư viện EmailJS -->
     <script src="app/js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        // Initialize EmailJS
+        // Khởi tạo EmailJS với Public Key
         (function () {
-            emailjs.init("w9mREpYvTPsdf-wdB"); // Replace with your EmailJS Public Key
+            emailjs.init("w9mREpYvTPsdf-wdB"); // Thay bằng Public Key của bạn
         })();
 
         const form = document.getElementById('contactForm');
         const statusMessage = document.getElementById('statusMessage');
 
         form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-    const data = {
-        username: formData.get('username'),
-        useremail: formData.get('useremail'),
-        message: formData.get('message'),
-    };
-
-    // Validate email format
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(data.useremail)) {
-        statusMessage.innerHTML = '<p class="error">Invalid email address.</p>';
-        return;
-    }
-
-    // Send email using EmailJS
-    emailjs
-        .send("service_s7m6qcu", "template_yt18p2e", data)
-        .then(() => {
-            statusMessage.innerHTML = '<p class="success">Email sent successfully!</p>';
-            form.reset();
-        })
-        .catch((error) => {
-            console.error("EmailJS Error:", error);
-            statusMessage.innerHTML = `<p class="error">Failed to send email. Error: ${error.text}</p>`;
+            event.preventDefault();
+            const formData = new FormData(form);
+            const data = {
+                username: formData.get('username'),
+                useremail: formData.get('useremail'),
+                message: formData.get('message'),
+            };
+            // Kiểm tra định dạng email hợp lệ
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(data.useremail)) {
+                statusMessage.innerHTML = '<p class="error">Invalid email address.</p>';
+                return;
+            }
+            // Gửi email sử dụng EmailJS
+            emailjs.send("service_s7m6qcu", "template_yt18p2e", data)
+                .then(() => {
+                    statusMessage.innerHTML = '<p class="success">Email sent successfully!</p>';
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error("EmailJS Error:", error);
+                    statusMessage.innerHTML = `<p class="error">Failed to send email. Error: ${error.text}</p>`;
+                });
         });
-});
-
     </script>
 </body>
-
 </html>
+    
